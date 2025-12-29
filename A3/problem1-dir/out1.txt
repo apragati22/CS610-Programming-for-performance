@@ -1,0 +1,78 @@
+3D Stencil (7-point) Optimization Benchmark
+Grid size: 66 x 66 x 66
+Timesteps: 100
+OpenMP threads: 32
+====================================
+
+====================================
+Version 0: Baseline
+Time: 25 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)
+====================================
+Version 1: LICM
+Time: 23 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)
+====================================
+Version 2: Loop Unrolling (factor 2)
+Time: 22 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)
+====================================
+Version 3: Loop Unrolling (factor 4)
+Time: 23 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)
+====================================
+Version 4: Loop Permutation (k-i-j)
+Time: 30 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)
+====================================
+Version 5: Loop Permutation (j-k-i)
+Time: 38 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)
+====================================
+Version 6: Loop Tiling
+Time: 22 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)
+====================================
+Version 7: Loop Permutation + Tiling (k-i-j)
+Time: 27 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)
+====================================
+Version 8: OpenMP
+Time: 7 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)
+====================================
+Version 9: Loop Permutation + OpenMP (j-k-i)
+Time: 6 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)
+====================================
+Version 10: OpenMP + Unrolling
+Time: 4 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)
+====================================
+Version 11: OpenMP + Tiling
+Time: 3 ms
+Final value at center: 0.0413429
+Total sum: 100
+Correctness verified! (diff < 1e-09)

@@ -1,0 +1,4 @@
+V4 kernel time: 37.258 s
+Total result points: 11608
+
+Total time (including I/O) = 37.477741 seconds

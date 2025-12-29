@@ -1,0 +1,9 @@
+Average naive kernel time: 0.00279124 s
+Average blocked kernel time: 0.00157056 s
+Speedup: 1.77723x
+Best block size : (4,16,32)
+Starting PAPI measurements...
+Naive L1 D-cache misses: 125799
+Naive L2 D-cache misses: 157816
+Blocked L1 D-cache misses: 115691
+Blocked L2 D-cache misses: 162285

@@ -1,0 +1,14 @@
+Inclusive Prefix Sum
+Array size: N = 4000000000 elements
+Memory: 14.9012 GB
+GPU: NVIDIA A40
+
+Skipping CTE (N >= 4B exceeds GPU memory)
+
+CPU time: 21586 ms
+
+UVM Model (with hints & prefetch):
+  Kernel time: 2312.36 ms
+  End-to-end time: 129041 ms
+  Verification skipped
+

@@ -1,0 +1,95 @@
+Generating SQLite file p1-results/part2_shmem.sqlite from p1-results/part2_shmem.nsys-rep
+Exporting 1156 events: [1%                                                     ]Exporting 1156 events: [2%                                                     ]Exporting 1156 events: [3%                                                     ]Exporting 1156 events: [4%                                                     ]Exporting 1156 events: [5%                                                     ]Exporting 1156 events: [=6%                                                    ]Exporting 1156 events: [=7%                                                    ]Exporting 1156 events: [==8%                                                   ]Exporting 1156 events: [==9%                                                   ]Exporting 1156 events: [==10%                                                  ]Exporting 1156 events: [===11%                                                 ]Exporting 1156 events: [===12%                                                 ]Exporting 1156 events: [====13%                                                ]Exporting 1156 events: [====14%                                                ]Exporting 1156 events: [=====15%                                               ]Exporting 1156 events: [=====16%                                               ]Exporting 1156 events: [======17%                                              ]Exporting 1156 events: [======18%                                              ]Exporting 1156 events: [=======19%                                             ]Exporting 1156 events: [========20%                                            ]Exporting 1156 events: [========21%                                            ]Exporting 1156 events: [=========22%                                           ]Exporting 1156 events: [=========23%                                           ]Exporting 1156 events: [==========24%                                          ]Exporting 1156 events: [==========25%                                          ]Exporting 1156 events: [===========26%                                         ]Exporting 1156 events: [===========27%                                         ]Exporting 1156 events: [============28%                                        ]Exporting 1156 events: [============29%                                        ]Exporting 1156 events: [=============30%                                       ]Exporting 1156 events: [==============31%                                      ]Exporting 1156 events: [==============32%                                      ]Exporting 1156 events: [===============33%                                     ]Exporting 1156 events: [===============34%                                     ]Exporting 1156 events: [================35%                                    ]Exporting 1156 events: [================36%                                    ]Exporting 1156 events: [=================37%                                   ]Exporting 1156 events: [=================38%                                   ]Exporting 1156 events: [==================39%                                  ]Exporting 1156 events: [===================40%                                 ]Exporting 1156 events: [===================41%                                 ]Exporting 1156 events: [====================42%                                ]Exporting 1156 events: [====================43%                                ]Exporting 1156 events: [=====================44%                               ]Exporting 1156 events: [=====================45%                               ]Exporting 1156 events: [======================46%                              ]Exporting 1156 events: [======================47%                              ]Exporting 1156 events: [=======================48%                             ]Exporting 1156 events: [=======================49%                             ]Exporting 1156 events: [========================50%                            ]Exporting 1156 events: [=========================51%                           ]Exporting 1156 events: [=========================52%                           ]Exporting 1156 events: [==========================53%                          ]Exporting 1156 events: [==========================54%                          ]Exporting 1156 events: [===========================55%                         ]Exporting 1156 events: [===========================56%                         ]Exporting 1156 events: [============================57%                        ]Exporting 1156 events: [============================58%                        ]Exporting 1156 events: [=============================59%                       ]Exporting 1156 events: [==============================60%                      ]Exporting 1156 events: [==============================61%                      ]Exporting 1156 events: [===============================62%                     ]Exporting 1156 events: [===============================63%                     ]Exporting 1156 events: [================================64%                    ]Exporting 1156 events: [================================65%                    ]Exporting 1156 events: [=================================66%                   ]Exporting 1156 events: [=================================67%                   ]Exporting 1156 events: [==================================68%                  ]Exporting 1156 events: [==================================69%                  ]Exporting 1156 events: [===================================70%                 ]Exporting 1156 events: [====================================71%                ]Exporting 1156 events: [====================================72%                ]Exporting 1156 events: [=====================================73%               ]Exporting 1156 events: [=====================================74%               ]Exporting 1156 events: [======================================75%              ]Exporting 1156 events: [======================================76%              ]Exporting 1156 events: [=======================================77%             ]Exporting 1156 events: [=======================================78%             ]Exporting 1156 events: [========================================79%            ]Exporting 1156 events: [=========================================80%           ]Exporting 1156 events: [=========================================81%           ]Exporting 1156 events: [==========================================82%          ]Exporting 1156 events: [==========================================83%          ]Exporting 1156 events: [===========================================84%         ]Exporting 1156 events: [===========================================85%         ]Exporting 1156 events: [============================================86%        ]Exporting 1156 events: [============================================87%        ]Exporting 1156 events: [=============================================88%       ]Exporting 1156 events: [=============================================89%       ]Exporting 1156 events: [==============================================90%      ]Exporting 1156 events: [===============================================91%     ]Exporting 1156 events: [===============================================92%     ]Exporting 1156 events: [================================================93%    ]Exporting 1156 events: [================================================94%    ]Exporting 1156 events: [=================================================95%   ]Exporting 1156 events: [=================================================96%   ]Exporting 1156 events: [==================================================97%  ]Exporting 1156 events: [==================================================98%  ]Exporting 1156 events: [===================================================99% ]Exporting 1156 events: [===================================================100%]
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/nvtxsum.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain NV Tools Extension (NVTX) data.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/osrtsum.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain OS Runtime trace data.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/cudaapisum.py]... 
+
+ ** CUDA API Summary (cudaapisum):
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)      Min (ns)      Max (ns)     StdDev (ns)             Name         
+ --------  ---------------  ---------  -------------  -------------  -----------  ------------  --------------  ----------------------
+     48.8     18,37,48,750          2  9,18,74,375.0  9,18,74,375.0        1,117  18,37,47,633  12,99,28,407.5  cudaEventCreate       
+     41.9     15,77,26,780          5  3,15,45,356.0  3,14,75,552.0  3,00,97,315   3,28,56,745      9,96,454.7  cudaMemcpy            
+      8.4      3,17,36,868          4    79,34,217.0    41,79,128.5    16,71,625   2,17,06,986     93,49,886.1  cudaEventSynchronize  
+      0.5        19,26,773          2     9,63,386.5     9,63,386.5     7,89,324     11,37,449      2,46,161.5  cudaFree              
+      0.1         3,66,439          4       91,609.8       22,763.0       15,223      3,05,690      1,42,765.7  cudaLaunchKernel      
+      0.1         3,56,575          4       89,143.8       80,689.0       45,040      1,50,157        50,850.6  cudaMemset            
+      0.1         3,07,865          2     1,53,932.5     1,53,932.5     1,10,729      1,97,136        61,099.0  cudaMalloc            
+      0.0           62,805          8        7,850.6        6,776.5        3,295        14,828         4,534.3  cudaEventRecord       
+      0.0           38,992          2       19,496.0       19,496.0        6,771        32,221        17,995.9  cudaEventDestroy      
+      0.0            1,694          1        1,694.0        1,694.0        1,694         1,694             0.0  cuModuleGetLoadingMode
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/gpukernsum.py]... 
+
+ ** CUDA GPU Kernel Summary (gpukernsum):
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)     GridXYZ         BlockXYZ                             Name                         
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  -----------  --------------  --------------  -----------------------------------------------------
+     69.8      2,17,07,680          1  2,17,07,680.0  2,17,07,680.0  2,17,07,680  2,17,07,680          0.0   256  256  256     1    1    1  shmem_kernel(const double *, double *, unsigned long)
+     17.9        55,80,009          1    55,80,009.0    55,80,009.0    55,80,009    55,80,009          0.0   128  128  128     2    2    2  shmem_kernel(const double *, double *, unsigned long)
+      7.7        23,91,506          1    23,91,506.0    23,91,506.0    23,91,506    23,91,506          0.0    64   64   64     4    4    4  shmem_kernel(const double *, double *, unsigned long)
+      4.6        14,27,436          1    14,27,436.0    14,27,436.0    14,27,436    14,27,436          0.0    32   32   32     8    8    8  shmem_kernel(const double *, double *, unsigned long)
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/gpumemtimesum.py]... 
+
+ ** GPU MemOps Summary (by Time) (gpumemtimesum):
+
+ Time (%)  Total Time (ns)  Count    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)      Operation     
+ --------  ---------------  -----  -------------  -------------  -----------  -----------  -----------  ------------------
+     80.3     12,62,03,665      4  3,15,50,916.3  3,13,03,558.0  3,10,53,965  3,25,42,584   6,94,922.7  [CUDA memcpy DtoH]
+     19.1      2,99,57,116      1  2,99,57,116.0  2,99,57,116.0  2,99,57,116  2,99,57,116          0.0  [CUDA memcpy HtoD]
+      0.6         9,47,334      4     2,36,833.5     2,34,673.5     2,33,538     2,44,449      5,151.8  [CUDA memset]     
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/gpumemsizesum.py]... 
+
+ ** GPU MemOps Summary (by Size) (gpumemsizesum):
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)      Operation     
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------
+    536.871      4   134.218   134.218   134.218   134.218        0.000  [CUDA memcpy DtoH]
+    536.871      4   134.218   134.218   134.218   134.218        0.000  [CUDA memset]     
+    134.218      1   134.218   134.218   134.218   134.218        0.000  [CUDA memcpy HtoD]
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/openmpevtsum.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain OpenMP event data.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/khrdebugsum.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain KHR Extension (KHR_DEBUG) data.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/khrdebuggpusum.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain GPU KHR Extension (KHR_DEBUG) data.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/vulkanmarkerssum.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain Vulkan Debug Extension (Vulkan Debug Util) data.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/vulkangpumarkersum.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain GPU Vulkan Debug Extension (GPU Vulkan Debug markers) data.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/dx11pixsum.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain DX11 CPU debug markers.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/dx12gpumarkersum.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain DX12 GPU debug markers.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/dx12pixsum.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain DX12 CPU debug markers.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/wddmqueuesdetails.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain WDDM context data.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/unifiedmemory.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/unifiedmemorytotals.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/umcpupagefaults.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [p1-results/part2_shmem.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/openaccsum.py]... 
+SKIPPED: p1-results/part2_shmem.sqlite does not contain OpenACC event data.
+

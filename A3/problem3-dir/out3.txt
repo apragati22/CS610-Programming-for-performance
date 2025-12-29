@@ -1,0 +1,8 @@
+Scalar kernel time (ms): 110
+Scalar Checksum: 4128768
+SSE4 kernel time (ms): 75
+SSE4 Checksum: 4128768
+SSE4 checksum matches scalar!
+AVX2 kernel time (ms): 67
+AVX2 Checksum: 4128768
+AVX2 checksum matches scalar!

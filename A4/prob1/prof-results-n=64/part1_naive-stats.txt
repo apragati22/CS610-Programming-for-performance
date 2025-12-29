@@ -1,0 +1,92 @@
+Generating SQLite file p1-results/part1_naive.sqlite from p1-results/part1_naive.nsys-rep
+Exporting 1020 events: [1%                                                     ]Exporting 1020 events: [2%                                                     ]Exporting 1020 events: [3%                                                     ]Exporting 1020 events: [4%                                                     ]Exporting 1020 events: [5%                                                     ]Exporting 1020 events: [=6%                                                    ]Exporting 1020 events: [=7%                                                    ]Exporting 1020 events: [==8%                                                   ]Exporting 1020 events: [==9%                                                   ]Exporting 1020 events: [==10%                                                  ]Exporting 1020 events: [===11%                                                 ]Exporting 1020 events: [===12%                                                 ]Exporting 1020 events: [====13%                                                ]Exporting 1020 events: [====14%                                                ]Exporting 1020 events: [=====15%                                               ]Exporting 1020 events: [=====16%                                               ]Exporting 1020 events: [======17%                                              ]Exporting 1020 events: [======18%                                              ]Exporting 1020 events: [=======19%                                             ]Exporting 1020 events: [========20%                                            ]Exporting 1020 events: [========21%                                            ]Exporting 1020 events: [=========22%                                           ]Exporting 1020 events: [=========23%                                           ]Exporting 1020 events: [==========24%                                          ]Exporting 1020 events: [==========25%                                          ]Exporting 1020 events: [===========26%                                         ]Exporting 1020 events: [===========27%                                         ]Exporting 1020 events: [============28%                                        ]Exporting 1020 events: [============29%                                        ]Exporting 1020 events: [=============30%                                       ]Exporting 1020 events: [==============31%                                      ]Exporting 1020 events: [==============32%                                      ]Exporting 1020 events: [===============33%                                     ]Exporting 1020 events: [===============34%                                     ]Exporting 1020 events: [================35%                                    ]Exporting 1020 events: [================36%                                    ]Exporting 1020 events: [=================37%                                   ]Exporting 1020 events: [=================38%                                   ]Exporting 1020 events: [==================39%                                  ]Exporting 1020 events: [===================40%                                 ]Exporting 1020 events: [===================41%                                 ]Exporting 1020 events: [====================42%                                ]Exporting 1020 events: [====================43%                                ]Exporting 1020 events: [=====================44%                               ]Exporting 1020 events: [=====================45%                               ]Exporting 1020 events: [======================46%                              ]Exporting 1020 events: [======================47%                              ]Exporting 1020 events: [=======================48%                             ]Exporting 1020 events: [=======================49%                             ]Exporting 1020 events: [========================50%                            ]Exporting 1020 events: [=========================51%                           ]Exporting 1020 events: [=========================52%                           ]Exporting 1020 events: [==========================53%                          ]Exporting 1020 events: [==========================54%                          ]Exporting 1020 events: [===========================55%                         ]Exporting 1020 events: [===========================56%                         ]Exporting 1020 events: [============================57%                        ]Exporting 1020 events: [============================58%                        ]Exporting 1020 events: [=============================59%                       ]Exporting 1020 events: [==============================60%                      ]Exporting 1020 events: [==============================61%                      ]Exporting 1020 events: [===============================62%                     ]Exporting 1020 events: [===============================63%                     ]Exporting 1020 events: [================================64%                    ]Exporting 1020 events: [================================65%                    ]Exporting 1020 events: [=================================66%                   ]Exporting 1020 events: [=================================67%                   ]Exporting 1020 events: [==================================68%                  ]Exporting 1020 events: [==================================69%                  ]Exporting 1020 events: [===================================70%                 ]Exporting 1020 events: [====================================71%                ]Exporting 1020 events: [====================================72%                ]Exporting 1020 events: [=====================================73%               ]Exporting 1020 events: [=====================================74%               ]Exporting 1020 events: [======================================75%              ]Exporting 1020 events: [======================================76%              ]Exporting 1020 events: [=======================================77%             ]Exporting 1020 events: [=======================================78%             ]Exporting 1020 events: [========================================79%            ]Exporting 1020 events: [=========================================80%           ]Exporting 1020 events: [=========================================81%           ]Exporting 1020 events: [==========================================82%          ]Exporting 1020 events: [==========================================83%          ]Exporting 1020 events: [===========================================84%         ]Exporting 1020 events: [===========================================85%         ]Exporting 1020 events: [============================================86%        ]Exporting 1020 events: [============================================87%        ]Exporting 1020 events: [=============================================88%       ]Exporting 1020 events: [=============================================89%       ]Exporting 1020 events: [==============================================90%      ]Exporting 1020 events: [===============================================91%     ]Exporting 1020 events: [===============================================92%     ]Exporting 1020 events: [================================================93%    ]Exporting 1020 events: [================================================94%    ]Exporting 1020 events: [=================================================95%   ]Exporting 1020 events: [=================================================96%   ]Exporting 1020 events: [==================================================97%  ]Exporting 1020 events: [==================================================98%  ]Exporting 1020 events: [===================================================99% ]Exporting 1020 events: [===================================================100%]
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/nvtxsum.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain NV Tools Extension (NVTX) data.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/osrtsum.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain OS Runtime trace data.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/cudaapisum.py]... 
+
+ ** CUDA API Summary (cudaapisum):
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)     Min (ns)     Max (ns)     StdDev (ns)             Name         
+ --------  ---------------  ---------  -------------  -------------  ---------  ------------  --------------  ----------------------
+     50.6     18,75,16,756          2  9,37,58,378.0  9,37,58,378.0   1,05,775  18,74,10,981  13,24,44,781.3  cudaFree              
+     48.3     17,90,13,865          2  8,95,06,932.5  8,95,06,932.5      1,340  17,90,12,525  12,65,80,022.8  cudaEventCreate       
+      0.8        30,43,210          2    15,21,605.0    15,21,605.0  14,72,427     15,70,783        69,548.2  cudaMalloc            
+      0.3        10,02,226          2     5,01,113.0     5,01,113.0   3,88,636      6,13,590      1,59,066.5  cudaMemcpy            
+      0.0         1,71,101          1     1,71,101.0     1,71,101.0   1,71,101      1,71,101             0.0  cudaLaunchKernel      
+      0.0           32,440          1       32,440.0       32,440.0     32,440        32,440             0.0  cudaMemset            
+      0.0           19,964          1       19,964.0       19,964.0     19,964        19,964             0.0  cudaEventSynchronize  
+      0.0           11,014          2        5,507.0        5,507.0      3,773         7,241         2,452.2  cudaEventRecord       
+      0.0            7,020          2        3,510.0        3,510.0        929         6,091         3,650.1  cudaEventDestroy      
+      0.0            1,758          1        1,758.0        1,758.0      1,758         1,758             0.0  cuModuleGetLoadingMode
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/gpukernsum.py]... 
+
+ ** CUDA GPU Kernel Summary (gpukernsum):
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)     GridXYZ         BlockXYZ                             Name                         
+ --------  ---------------  ---------  --------  --------  --------  --------  -----------  --------------  --------------  -----------------------------------------------------
+    100.0           22,240          1  22,240.0  22,240.0    22,240    22,240          0.0     8    8    8     8    8    8  naive_kernel(const double *, double *, unsigned long)
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/gpumemtimesum.py]... 
+
+ ** GPU MemOps Summary (by Time) (gpumemtimesum):
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)    Med (ns)   Min (ns)  Max (ns)  StdDev (ns)      Operation     
+ --------  ---------------  -----  ----------  ----------  --------  --------  -----------  ------------------
+     64.4         4,62,371      1  4,62,371.0  4,62,371.0  4,62,371  4,62,371          0.0  [CUDA memcpy HtoD]
+     35.0         2,51,458      1  2,51,458.0  2,51,458.0  2,51,458  2,51,458          0.0  [CUDA memcpy DtoH]
+      0.7            4,672      1     4,672.0     4,672.0     4,672     4,672          0.0  [CUDA memset]     
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/gpumemsizesum.py]... 
+
+ ** GPU MemOps Summary (by Size) (gpumemsizesum):
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)      Operation     
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------
+      2.097      1     2.097     2.097     2.097     2.097        0.000  [CUDA memcpy DtoH]
+      2.097      1     2.097     2.097     2.097     2.097        0.000  [CUDA memcpy HtoD]
+      2.097      1     2.097     2.097     2.097     2.097        0.000  [CUDA memset]     
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/openmpevtsum.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain OpenMP event data.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/khrdebugsum.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain KHR Extension (KHR_DEBUG) data.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/khrdebuggpusum.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain GPU KHR Extension (KHR_DEBUG) data.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/vulkanmarkerssum.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain Vulkan Debug Extension (Vulkan Debug Util) data.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/vulkangpumarkersum.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain GPU Vulkan Debug Extension (GPU Vulkan Debug markers) data.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/dx11pixsum.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain DX11 CPU debug markers.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/dx12gpumarkersum.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain DX12 GPU debug markers.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/dx12pixsum.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain DX12 CPU debug markers.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/wddmqueuesdetails.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain WDDM context data.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/unifiedmemory.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/unifiedmemorytotals.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/umcpupagefaults.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [p1-results/part1_naive.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/openaccsum.py]... 
+SKIPPED: p1-results/part1_naive.sqlite does not contain OpenACC event data.
+

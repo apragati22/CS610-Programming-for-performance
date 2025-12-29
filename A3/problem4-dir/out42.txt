@@ -1,0 +1,3 @@
+Number of OpenMP threads: 32
+result pnts: 11608
+Total time = 8.538000 seconds

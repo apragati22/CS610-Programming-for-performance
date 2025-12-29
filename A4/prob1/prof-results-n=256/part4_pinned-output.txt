@@ -1,0 +1,28 @@
+CPU time: 35 ms
+
+Pinned Memory Kernel Performance
+=================================
+
+Block: 8x8x8
+Shared memory: 8000 bytes
+
+GPU time (kernel + transfers): 34.9708 ms
+Kernel time: 1.42685 ms
+Transfer time: 33.544 ms
+No differences found between base and test versions
+
+=== Transfer Comparison ===
+
+Pageable memory:
+  H2D: 29.79 ms
+  D2H: 31.68 ms
+  Total: 61.47 ms
+
+Pinned memory:
+  H2D: 16.4174 ms
+  D2H: 16.9372 ms
+  Total: 33.3546 ms
+
+Transfer speedup: 1.84293x
+
+Pinned end-to-end time (total): 938 ms

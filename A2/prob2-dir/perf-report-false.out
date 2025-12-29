@@ -1,0 +1,813 @@
+=================================================
+            Trace Event Information              
+=================================================
+  Total records                     :      44463
+  Locked Load/Store Operations      :       5877
+  Load Operations                   :      20986
+  Loads - uncacheable               :          1
+  Loads - IO                        :          0
+  Loads - Miss                      :          0
+  Loads - no mapping                :          7
+  Load Fill Buffer Hit              :       7416
+  Load L1D hit                      :       8493
+  Load L2D hit                      :         27
+  Load LLC hit                      :       4960
+  Load Local HITM                   :       2690
+  Load Remote HITM                  :          0
+  Load Remote HIT                   :          0
+  Load Local DRAM                   :         82
+  Load Remote DRAM                  :          0
+  Load MESI State Exclusive         :          0
+  Load MESI State Shared            :         82
+  Load LLC Misses                   :         82
+  Load access blocked by data       :          0
+  Load access blocked by address    :          0
+  Load HIT Local Peer               :          0
+  Load HIT Remote Peer              :          0
+  LLC Misses to Local DRAM          :      100.0%
+  LLC Misses to Remote DRAM         :        0.0%
+  LLC Misses to Remote cache (HIT)  :        0.0%
+  LLC Misses to Remote cache (HITM) :        0.0%
+  Store Operations                  :      23477
+  Store - uncacheable               :          0
+  Store - no mapping                :          1
+  Store L1D Hit                     :      23316
+  Store L1D Miss                    :        160
+  Store No available memory level   :          0
+  No Page Map Rejects               :      19509
+  Unable to parse data source       :          0
+
+=================================================
+    Global Shared Cache Line Event Information   
+=================================================
+  Total Shared Cache Lines          :        116
+  Load HITs on shared lines         :      15558
+  Fill Buffer Hits on shared lines  :       6698
+  L1D hits on shared lines          :       5164
+  L2D hits on shared lines          :          0
+  LLC hits on shared lines          :       3696
+  Load hits on peer cache or nodes  :          0
+  Locked Access on shared lines     :       5716
+  Blocked Access on shared lines    :          0
+  Store HITs on shared lines        :       7044
+  Store L1D hits on shared lines    :       6964
+  Store No available memory level   :          0
+  Total Merged records              :       9734
+
+=================================================
+                 c2c details                     
+=================================================
+  Events                            : cpu/mem-loads,ldlat=30/P
+                                    : cpu/mem-stores/P
+  Cachelines sort on                : Total HITMs
+  Cacheline data grouping           : offset,iaddr
+
+=================================================
+           Shared Data Cache Line Table          
+=================================================
+#
+#        ----------- Cacheline ----------      Tot  ------- Load Hitm -------    Total    Total    Total  --------- Stores --------  ----- Core Load Hit -----  - LLC Load Hit --  - RMT Load Hit --  --- Load Dram ----
+# Index             Address  Node  PA cnt     Hitm    Total  LclHitm  RmtHitm  records    Loads   Stores    L1Hit   L1Miss      N/A       FB       L1       L2    LclHit  LclHitm    RmtHit  RmtHitm       Lcl       Rmt
+# .....  ..................  ....  ......  .......  .......  .......  .......  .......  .......  .......  .......  .......  .......  .......  .......  .......  ........  .......  ........  .......  ........  ........
+#
+      0  0xffffa0da01930a80     0    2543   38.92%     1047     1047        0     4335     3447      888      861       27        0      628     1451        0       321     1047         0        0         0         0
+      1      0x5a63e4886400     0    7797   33.12%      891      891        0    11845     9306     2539     2515       24        0     4935     3084        0       396      891         0        0         0         0
+      2      0x5a63e4886400     0       1   10.48%      282      282        0      351      351        0        0        0        0        1        2        0        66      282         0        0         0         0
+      3      0x5a63e4886280     0    1115    4.28%      115      115        0     1584     1389      195      194        1        0      854      355        0        65      115         0        0         0         0
+      4      0x5a63e48863c0     0       1    0.82%       22       22        0       68       66        2        0        2        0        3        0        0        41       22         0        0         0         0
+      5  0xffffbea60170fb00   N/A       0    0.71%       19       19        0       39       39        0        0        0        0        0        0        0        20       19         0        0         0         0
+      6  0xffffa0da019395c0     0      24    0.41%       11       11        0       45       28       17       17        0        0        2       12        0         3       11         0        0         0         0
+      7  0xffffa0da19320000     0      93    0.37%       10       10        0      154       39      115      114        1        0        6       17        0         6       10         0        0         0         0
+      8  0xffffa0da1932d280     0      93    0.37%       10       10        0      154       23      131      131        0        0        4        9        0         0       10         0        0         0         0
+      9  0xffffa0da0d342940     0     104    0.33%        9        9        0      174       35      139      139        0        0       10       16        0         0        9         0        0         0         0
+     10  0xffffa0dd4c335a00     0      14    0.33%        9        9        0       21       12        9        9        0        0        2        0        0         1        9         0        0         0         0
+     11  0xffffa0dd4c335600     0       6    0.30%        8        8        0       17       17        0        0        0        0        8        0        0         1        8         0        0         0         0
+     12  0xffffa0dd4c2b4c00     0      21    0.26%        7        7        0       27       21        6        6        0        0        4        9        0         1        7         0        0         0         0
+     13  0xffffa0dd4c2b5600     0       3    0.26%        7        7        0       10       10        0        0        0        0        3        0        0         0        7         0        0         0         0
+     14  0xffffa0dd4c435a00     0      12    0.26%        7        7        0       16       10        6        6        0        0        3        0        0         0        7         0        0         0         0
+     15  0xffffa0da00d0d280     0       3    0.22%        6        6        0        9        6        3        3        0        0        0        0        0         0        6         0        0         0         0
+     16  0xffffa0da52100800     0       8    0.22%        6        6        0       19        6       13       13        0        0        0        0        0         0        6         0        0         0         0
+     17  0xffffa0dd4c334c00     0      13    0.22%        6        6        0       24       16        8        8        0        0        2        8        0         0        6         0        0         0         0
+     18  0xffffa0dd4c434c00     0      12    0.22%        6        6        0       21       18        3        3        0        0        4        8        0         0        6         0        0         0         0
+     19  0xffffa0da0bf38000     0      81    0.19%        5        5        0      134       33      101      100        1        0        7       17        0         4        5         0        0         0         0
+     20  0xffffa0da0d342980     0       5    0.19%        5        5        0       10        7        3        3        0        0        1        0        0         1        5         0        0         0         0
+     21  0xffffa0da19320800     0       7    0.19%        5        5        0       30        6       24       24        0        0        1        0        0         0        5         0        0         0         0
+     22  0xffffa0da52100000     0      80    0.19%        5        5        0      147       31      116      116        0        0        5       14        0         7        5         0        0         0         0
+     23  0xffffa0dd4c2b4c40     0       5    0.19%        5        5        0        9        9        0        0        0        0        3        0        0         1        5         0        0         0         0
+     24  0xffffa0dd4c2b5e80     0       1    0.19%        5        5        0       17       14        3        3        0        0        0        6        0         3        5         0        0         0         0
+     25  0xffffa0dd4c421800     0       4    0.19%        5        5        0       12        8        4        2        2        0        0        0        0         3        5         0        0         0         0
+     26  0xffffa0dd4c435e80     0       1    0.19%        5        5        0       11       10        1        1        0        0        0        5        0         0        5         0        0         0         0
+     27      0x5a63e4886280     0       1    0.15%        4        4        0        5        5        0        0        0        0        0        0        0         1        4         0        0         0         0
+     28  0xffffa0da00fc2940     0       1    0.15%        4        4        0        8        6        2        2        0        0        1        0        0         1        4         0        0         0         0
+     29  0xffffa0da0d343140     0       7    0.15%        4        4        0       19        5       14       14        0        0        0        0        0         1        4         0        0         0         0
+     30  0xffffa0dd4c021800     0       8    0.15%        4        4        0       10        9        1        0        1        0        0        0        0         5        4         0        0         0         0
+     31  0xffffa0dd4c0b4c00     0       7    0.15%        4        4        0       12       11        1        1        0        0        0        7        0         0        4         0        0         0         0
+     32  0xffffa0dd4c0b5600     0       7    0.15%        4        4        0       12       12        0        0        0        0        8        0        0         0        4         0        0         0         0
+     33  0xffffa0dd4c1b5a00     0       7    0.15%        4        4        0        9        6        3        3        0        0        2        0        0         0        4         0        0         0         0
+     34  0xffffa0dd4c1b5e80     0       1    0.15%        4        4        0       10        9        1        1        0        0        0        5        0         0        4         0        0         0         0
+     35  0xffffa0dd4c2b5a00     0       8    0.15%        4        4        0       13        7        6        5        1        0        3        0        0         0        4         0        0         0         0
+     36  0xffffa0dd4c321800     0       9    0.15%        4        4        0       15        8        7        3        4        0        1        0        0         3        4         0        0         0         0
+     37  0xffffa0dd4c334c40     0       5    0.15%        4        4        0       10       10        0        0        0        0        5        1        0         0        4         0        0         0         0
+     38  0xffffa0dd4c435600     0      12    0.15%        4        4        0       17       17        0        0        0        0       12        1        0         0        4         0        0         0         0
+     39  0xffffa0da00fc8000     0       4    0.11%        3        3        0       16        8        8        8        0        0        1        3        0         1        3         0        0         0         0
+     40  0xffffa0da0bf38800     0       7    0.11%        3        3        0       14        3       11       11        0        0        0        0        0         0        3         0        0         0         0
+     41  0xffffa0da0bf38940     0       4    0.11%        3        3        0        5        4        1        0        1        0        1        0        0         0        3         0        0         0         0
+     42  0xffffa0da0d343280     0       2    0.11%        3        3        0        4        3        1        0        1        0        0        0        0         0        3         0        0         0         0
+     43  0xffffa0da1932dbc0     0       2    0.11%        3        3        0        4        3        1        0        1        0        0        0        0         0        3         0        0         0         0
+     44  0xffffa0dd4c0b5a00     0       6    0.11%        3        3        0        9        3        6        6        0        0        0        0        0         0        3         0        0         0         0
+     45  0xffffa0dd4c1b4c40     0       1    0.11%        3        3        0        4        4        0        0        0        0        1        0        0         0        3         0        0         0         0
+     46  0xffffa0dd4c335e80     0       1    0.11%        3        3        0       18       11        7        7        0        0        0        5        0         3        3         0        0         0         0
+     47  0xffffbea613a53a80   N/A       0    0.11%        3        3        0      103       36       67       67        0        0       11       22        0         0        3         0        0         0         0
+     48  0xffffbea613a63b80   N/A       0    0.11%        3        3        0       81        8       73       73        0        0        1        3        0         1        3         0        0         0         0
+     49  0xffffbea613a73a80   N/A       0    0.11%        3        3        0       88       22       66       64        2        0        6       11        0         2        3         0        0         0         0
+     50  0xffffbea613a73b80   N/A       0    0.11%        3        3        0       84        9       75       75        0        0        2        2        0         2        3         0        0         0         0
+
+=================================================
+      Shared Cache Line Distribution Pareto      
+=================================================
+#
+#        ----- HITM -----  ------- Store Refs ------  --------- Data address ---------                      ---------- cycles ----------    Total       cpu                                             Shared                                      
+#   Num  RmtHitm  LclHitm   L1 Hit  L1 Miss      N/A              Offset  Node  PA cnt        Code address  rmt hitm  lcl hitm      load  records       cnt                          Symbol             Object                     Source:Line  Node{cpu list}
+# .....  .......  .......  .......  .......  .......  ..................  ....  ......  ..................  ........  ........  ........  .......  ........  ..............................  .................  ..............................  ....
+#
+  ----------------------------------------------------------------------
+      0        0     1047      861       27        0  0xffffa0da01930a80
+  ----------------------------------------------------------------------
+           0.00%   50.05%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffae627cc2         0       140       125      570         7  [k] futex_wake                  [kernel.kallsyms]  futex_wake+146                   0{0-1,3,5-6,8,10}
+           0.00%    2.58%   19.98%    0.00%    0.00%                 0x0     0       1  0xffffffffae623a36         0       361       178      362         7  [k] futex_q_unlock              [kernel.kallsyms]  futex_q_unlock+22                0{0-1,3,5-6,8,10}
+           0.00%    0.38%   20.79%    0.00%    0.00%                 0x0     0       1  0xffffffffae6239eb         0       296       144      497         7  [k] futex_q_lock                [kernel.kallsyms]  futex_q_lock+27                  0{0-1,3,5-6,8,10}
+           0.00%    0.10%    4.07%    0.00%    0.00%                 0x0     0       1  0xffffffffae623989         0       465       303       61         7  [k] __futex_unqueue             [kernel.kallsyms]  __futex_unqueue+41               0{0-1,3,5-6,8,10}
+           0.00%    8.50%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffaf6314d3         0       129        95      109         7  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{0-1,3,5-6,8,10}
+           0.00%    7.45%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffaf6316db         0       159       213      130         7  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{0-1,3,5-6,8,10}
+           0.00%    6.97%   27.99%    0.00%    0.00%                 0x4     0       1  0xffffffffaf6311f3         0       363       256     1094         7  [k] _raw_spin_lock              [kernel.kallsyms]  _raw_spin_lock+19                0{0-1,3,5-6,8,10}
+           0.00%    5.83%   21.84%    0.00%    0.00%                 0x4     0       1  0xffffffffaf6314ab         0       438       274      428         7  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{0-1,3,5-6,8,10}
+           0.00%    5.16%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffaf6314b3         0       430       317      277         7  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{0-1,3,5-6,8,10}
+           0.00%    1.91%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffaf631584         0       150       192       37         7  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{0-1,3,5-6,8,10}
+           0.00%    1.81%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffaf6314ca         0       305       263      104         7  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{0-1,3,5-6,8,10}
+           0.00%    1.43%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffaf6314fb         0       140       158       24         7  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{0-1,3,5-6,8,10}
+           0.00%    1.34%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffaf631513         0       118       115       21         7  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{0-1,3,5-6,8,10}
+           0.00%    0.10%    0.46%    0.00%    0.00%                 0x4     0       1  0xffffffffaf63172c         0       343       184       59         7  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{0-1,3,5-6,8,10}
+           0.00%    0.00%    0.35%    0.00%    0.00%                 0x4     0       1  0xffffffffaf631329         0         0         0        3         2  [k] _raw_spin_unlock            [kernel.kallsyms]  _raw_spin_unlock+9               0{1,6}
+           0.00%    0.00%    0.46%   51.85%    0.00%                 0x4     0       1  0xffffffffaf6314df         0         0         0       18         7  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{0-1,3,5-6,8,10}
+           0.00%    0.00%    0.12%    7.41%    0.00%                 0x4     0       1  0xffffffffaf6316ec         0         0         0        3         3  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{1,5,10}
+           0.00%    1.05%    1.86%    0.00%    0.00%                 0x6     0       1  0xffffffffaf63166a         0       394       235       67         7  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{0-1,3,5-6,8,10}
+           0.00%    2.29%    0.00%    0.00%    0.00%                 0x8     0       1  0xffffffffae627d0d         0       158       109      349         7  [k] futex_wake                  [kernel.kallsyms]  futex_wake+221                   0{0-1,3,5-6,8,10}
+           0.00%    1.72%    0.00%    0.00%    0.00%                 0x8     0       1  0xffffffffaf58f655         0       125        78       21         6  [k] plist_add                   [kernel.kallsyms]  plist_add+37                     0{1,3,5-6,8,10}
+           0.00%    1.15%    0.00%    0.00%    0.00%                 0x8     0       1  0xffffffffae627d22         0       142        75       48         7  [k] futex_wake                  [kernel.kallsyms]  futex_wake+242                   0{0-1,3,5-6,8,10}
+           0.00%    0.19%    0.00%    0.00%    0.00%                0x10     0       1  0xffffffffaf58f6af         0       114       123       11         7  [k] plist_add                   [kernel.kallsyms]  plist_add+127                    0{0-1,3,5-6,8,10}
+           0.00%    0.00%    1.97%   40.74%    0.00%                0x10     0       1  0xffffffffaf58f6b3         0         0         0       28         6  [k] plist_add                   [kernel.kallsyms]  plist_add+131                    0{0-1,3,5-6,8}
+           0.00%    0.00%    0.12%    0.00%    0.00%                0x10     0       1  0xffffffffaf58f746         0         0         0        1         1  [k] plist_del                   [kernel.kallsyms]  plist_del+70                     0{8}
+
+  ----------------------------------------------------------------------
+      1        0      891     2515       24        0      0x5a63e4886400
+  ----------------------------------------------------------------------
+           0.00%    0.67%    0.12%    4.17%    0.00%                 0x0     0       1      0x5a63e4882565         0       134       111      741         7  [.] thread_runner(void*)        problem2a.out  thread_runner(void*)+805    0{0-1,3,5-6,8,10}
+           0.00%   12.01%    0.00%    0.00%    0.00%                 0x8     0       1      0x74701d691294         0       185       188      158         7  [.] __GI___lll_lock_wait        libc.so.6      lowlevellock.c:42           0{0-1,3,5-6,8,10}
+           0.00%    9.43%   39.56%    0.00%    0.00%                 0x8     0       1      0x74701d697f40         0       300       188     2293         7  [.] pthread_mutex_lock@@GLIBC_  libc.so.6      pthread_mutex_lock.c:48     0{0-1,3,5-6,8,10}
+           0.00%    6.85%    5.33%    0.00%    0.00%                 0x8     0       1      0x74701d6912a3         0       329       169      657         7  [.] __GI___lll_lock_wait        libc.so.6      lowlevellock.c:45           0{0-1,3,5-6,8,10}
+           0.00%    5.72%   50.34%    0.00%    0.00%                 0x8     0       1      0x74701d699aa4         0       365       137     2874         7  [.] pthread_mutex_unlock@@GLIB  libc.so.6      pthread_mutex_unlock.c:43   0{0-1,3,5-6,8,10}
+           0.00%    9.76%    0.00%    0.00%    0.00%                0x10     0       1      0x74701d697f4a         0       147       106      697         7  [.] pthread_mutex_lock@@GLIBC_  libc.so.6      pthread_mutex_lock.c:94     0{0-1,3,5-6,8,10}
+           0.00%    0.00%    1.03%   87.50%    0.00%                0x10     0       1      0x74701d697f5d         0         0         0       47         6  [.] pthread_mutex_lock@@GLIBC_  libc.so.6      pthread_mutex_lock.c:170    0{0-1,3,5-6,8}
+           0.00%    0.00%    0.04%    0.00%    0.00%                0x10     0       1      0x74701d699a90         0         0         0        1         1  [.] pthread_mutex_unlock@@GLIB  libc.so.6      pthread_mutex_unlock.c:62   0{0}
+           0.00%    0.67%    0.12%    0.00%    0.00%                0x14     0       1      0x74701d697f60         0       136       108      681         7  [.] pthread_mutex_lock@@GLIBC_  libc.so.6      pthread_mutex_lock.c:172    0{0-1,3,5-6,8,10}
+           0.00%    0.11%    3.46%    8.33%    0.00%                0x14     0       1      0x74701d699a8c         0       100       108      704         7  [.] pthread_mutex_unlock@@GLIB  libc.so.6      pthread_mutex_unlock.c:65   0{0-1,3,5-6,8,10}
+           0.00%   52.86%    0.00%    0.00%    0.00%                0x18     0       1      0x74701d697ef4         0       131        99      795         7  [.] pthread_mutex_lock@@GLIBC_  libc.so.6      pthread_mutex_lock.c:80     0{0-1,3,5-6,8,10}
+           0.00%    1.01%    0.00%    0.00%    0.00%                0x18     0       1      0x74701d697f22         0       119       116      748         7  [.] pthread_mutex_lock@@GLIBC_  libc.so.6      pthread_mutex_lock.c:44     0{0-1,3,5-6,8,10}
+           0.00%    0.67%    0.00%    0.00%    0.00%                0x18     0       1      0x74701d699a74         0       123       107      756         7  [.] pthread_mutex_unlock@@GLIB  libc.so.6      pthread_mutex_unlock.c:51   0{0-1,3,5-6,8,10}
+           0.00%    0.22%    0.00%    0.00%    0.00%                0x18     0       1      0x74701d699a97         0       110       104      693         7  [.] pthread_mutex_unlock@@GLIB  libc.so.6      pthread_mutex_unlock.c:39   0{0-1,3,5-6,8,10}
+
+  ----------------------------------------------------------------------
+      2        0      282        0        0        0      0x5a63e4886400
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                 0x8     0       1  0xffffffffaf5a2f66         0       131        85      351         7  [k] __get_user_nocheck_4  [kernel.kallsyms]  __get_user_nocheck_4+6   0{0-1,3,5-6,8,10}
+
+  ----------------------------------------------------------------------
+      3        0      115      194        1        0      0x5a63e4886280
+  ----------------------------------------------------------------------
+           0.00%    0.87%   18.56%    0.00%    0.00%                0x20     0       1      0x74701d697f40         0       304       208      186         7  [.] pthread_mutex_lock@@GLIBC_  libc.so.6  pthread_mutex_lock.c:48     0{0-1,3,5-6,8,10}
+           0.00%    0.87%   74.74%    0.00%    0.00%                0x20     0       1      0x74701d699aa4         0       610       229      360         7  [.] pthread_mutex_unlock@@GLIB  libc.so.6  pthread_mutex_unlock.c:43   0{0-1,3,5-6,8,10}
+           0.00%    0.00%    2.06%    0.00%    0.00%                0x20     0       1      0x74701d6912a3         0         0       145       16         7  [.] __GI___lll_lock_wait        libc.so.6  lowlevellock.c:45           0{0-1,3,5-6,8,10}
+           0.00%    0.00%    1.55%  100.00%    0.00%                0x28     0       1      0x74701d697f5d         0         0         0        4         3  [.] pthread_mutex_lock@@GLIBC_  libc.so.6  pthread_mutex_lock.c:170    0{3,5,8}
+           0.00%    0.00%    3.09%    0.00%    0.00%                0x2c     0       1      0x74701d699a8c         0         0        89      134         7  [.] pthread_mutex_unlock@@GLIB  libc.so.6  pthread_mutex_unlock.c:65   0{0-1,3,5-6,8,10}
+           0.00%   98.26%    0.00%    0.00%    0.00%                0x30     0       1      0x74701d697ef4         0       114        84      160         7  [.] pthread_mutex_lock@@GLIBC_  libc.so.6  pthread_mutex_lock.c:80     0{0-1,3,5-6,8,10}
+
+  ----------------------------------------------------------------------
+      4        0       22        0        2        0      0x5a63e48863c0
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%  100.00%    0.00%                 0x0     0       1      0x5a63e48823c5         0       125        79       68         7  [.] thread_runner(void*)  problem2a.out  thread_runner(void*)+389   0{0-1,3,5-6,8,10}
+
+  ----------------------------------------------------------------------
+      5        0       19        0        0        0  0xffffbea60170fb00
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae627d22         0       120        50       39         7  [k] futex_wake  [kernel.kallsyms]  futex_wake+242   0{0-1,3,5-6,8,10}
+
+  ----------------------------------------------------------------------
+      6        0       11       17        0        0  0xffffa0da019395c0
+  ----------------------------------------------------------------------
+           0.00%   72.73%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffae627cc2         0       115         0        8         5  [k] futex_wake                  [kernel.kallsyms]  futex_wake+146                   0{0-1,5-6,8}
+           0.00%    0.00%   17.65%    0.00%    0.00%                 0x0     0       1  0xffffffffae623989         0         0         0        3         3  [k] __futex_unqueue             [kernel.kallsyms]  __futex_unqueue+41               0{1,5,8}
+           0.00%    0.00%   35.29%    0.00%    0.00%                 0x0     0       1  0xffffffffae6239eb         0         0       113       13         6  [k] futex_q_lock                [kernel.kallsyms]  futex_q_lock+27                  0{1,3,5-6,8,10}
+           0.00%    0.00%   11.76%    0.00%    0.00%                 0x0     0       1  0xffffffffae623a36         0         0         0        2         2  [k] futex_q_unlock              [kernel.kallsyms]  futex_q_unlock+22                0{1,6}
+           0.00%   18.18%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffaf6314d3         0       112         0        2         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{5}
+           0.00%    9.09%   17.65%    0.00%    0.00%                 0x4     0       1  0xffffffffaf6314ab         0       432       151        5         3  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{3,5-6}
+           0.00%    0.00%   11.76%    0.00%    0.00%                 0x4     0       1  0xffffffffaf6311f3         0         0       200        9         4  [k] _raw_spin_lock              [kernel.kallsyms]  _raw_spin_lock+19                0{0-1,5,8}
+           0.00%    0.00%    5.88%    0.00%    0.00%                0x10     0       1  0xffffffffaf58f6b3         0         0         0        1         1  [k] plist_add                   [kernel.kallsyms]  plist_add+131                    0{6}
+
+  ----------------------------------------------------------------------
+      7        0       10      114        1        0  0xffffa0da19320000
+  ----------------------------------------------------------------------
+           0.00%   10.00%    4.39%    0.00%    0.00%                 0x0     0       1  0xffffffffaf627d34         0       254        65       10         2  [k] __schedule                 [kernel.kallsyms]  __schedule+292                  0{0-1}
+           0.00%    0.00%    5.26%    0.00%    0.00%                 0x0     0       1  0xffffffffaf62000f         0         0        70        9         2  [k] syscall_exit_to_user_mode  [kernel.kallsyms]  syscall_exit_to_user_mode+431   0{0-1}
+           0.00%    0.00%    1.75%    0.00%    0.00%                 0x1     0       1  0xffffffffae46bc6f         0         0        46        4         2  [k] switch_fpu_return          [kernel.kallsyms]  switch_fpu_return+111           0{0-1}
+           0.00%    0.00%   78.07%    0.00%    0.00%                0x10     0       1  0xffffffffaf61fec1         0         0         0       89         2  [k] syscall_exit_to_user_mode  [kernel.kallsyms]  syscall_exit_to_user_mode+97    0{0-1}
+           0.00%   10.00%    0.00%    0.00%    0.00%                0x14     0       1  0xffffffffae57251f         0       119        71        2         2  [k] dequeue_entity             [kernel.kallsyms]  dequeue_entity+927              0{0-1}
+           0.00%   10.00%    0.00%    0.00%    0.00%                0x14     0       1  0xffffffffae59e856         0       121        72        5         2  [k] psi_task_switch            [kernel.kallsyms]  psi_task_switch+38              0{0-1}
+           0.00%   10.00%    0.00%    0.00%    0.00%                0x18     0       1  0xffffffffae554ce4         0       132         0        1         1  [k] prepare_task_switch        [kernel.kallsyms]  prepare_task_switch+84          0{1}
+           0.00%    0.00%    0.88%    0.00%    0.00%                0x18     0       1  0xffffffffae628185         0         0        36        2         2  [k] futex_wait_queue           [kernel.kallsyms]  futex_wait_queue+37             0{0-1}
+           0.00%    0.00%    1.75%    0.00%    0.00%                0x18     0       1  0xffffffffae6281cf         0         0         0        2         2  [k] futex_wait_queue           [kernel.kallsyms]  futex_wait_queue+111            0{0-1}
+           0.00%    0.00%    2.63%    0.00%    0.00%                0x28     0       1  0xffffffffae562a2a         0         0       208        7         3  [k] wake_up_q                  [kernel.kallsyms]  wake_up_q+90                    0{3,6,8}
+           0.00%    0.00%    1.75%    0.00%    0.00%                0x28     0       1  0xffffffffae627b33         0         0       175        6         3  [k] futex_wake_mark            [kernel.kallsyms]  futex_wake_mark+35              0{3,5-6}
+           0.00%   60.00%    0.00%    0.00%    0.00%                0x34     0       1  0xffffffffae562481         0       124         0        6         3  [k] try_to_wake_up             [kernel.kallsyms]  try_to_wake_up+273              0{5-6,8}
+           0.00%    0.00%    3.51%  100.00%    0.00%                0x38     0       1  0xffffffffaec4b5d3         0         0         0        5         2  [k] llist_add_batch            [kernel.kallsyms]  llist_add_batch+3               0{3,8}
+
+  ----------------------------------------------------------------------
+      8        0       10      131        0        0  0xffffa0da1932d280
+  ----------------------------------------------------------------------
+           0.00%    0.00%    4.58%    0.00%    0.00%                 0x0     0       1  0xffffffffaf62000f         0         0        88       10         2  [k] syscall_exit_to_user_mode  [kernel.kallsyms]  syscall_exit_to_user_mode+431   0{3,10}
+           0.00%    0.00%    4.58%    0.00%    0.00%                 0x1     0       1  0xffffffffae46bc6f         0         0         0        6         2  [k] switch_fpu_return          [kernel.kallsyms]  switch_fpu_return+111           0{3,10}
+           0.00%    0.00%   74.05%    0.00%    0.00%                0x10     0       1  0xffffffffaf61fec1         0         0         0       97         2  [k] syscall_exit_to_user_mode  [kernel.kallsyms]  syscall_exit_to_user_mode+97    0{3,10}
+           0.00%   40.00%    0.00%    0.00%    0.00%                0x18     0       1  0xffffffffae554ce4         0       112         0        4         1  [k] prepare_task_switch        [kernel.kallsyms]  prepare_task_switch+84          0{3}
+           0.00%   10.00%    0.00%    0.00%    0.00%                0x18     0       1  0xffffffffae5623c5         0       129         0        1         1  [k] try_to_wake_up             [kernel.kallsyms]  try_to_wake_up+85               0{5}
+           0.00%    0.00%    3.05%    0.00%    0.00%                0x18     0       1  0xffffffffae628185         0         0         0        4         2  [k] futex_wait_queue           [kernel.kallsyms]  futex_wait_queue+37             0{3,10}
+           0.00%    0.00%    1.53%    0.00%    0.00%                0x18     0       1  0xffffffffae6281cf         0         0         0        2         2  [k] futex_wait_queue           [kernel.kallsyms]  futex_wait_queue+111            0{3,10}
+           0.00%    0.00%    3.82%    0.00%    0.00%                0x28     0       1  0xffffffffae562a2a         0         0       117        6         3  [k] wake_up_q                  [kernel.kallsyms]  wake_up_q+90                    0{0,5-6}
+           0.00%    0.00%    4.58%    0.00%    0.00%                0x28     0       1  0xffffffffae627b33         0         0       155        7         3  [k] futex_wake_mark            [kernel.kallsyms]  futex_wake_mark+35              0{1,6,8}
+           0.00%   50.00%    0.00%    0.00%    0.00%                0x34     0       1  0xffffffffae562481         0       121         0        5         3  [k] try_to_wake_up             [kernel.kallsyms]  try_to_wake_up+273              0{1,5,8}
+           0.00%    0.00%    3.82%    0.00%    0.00%                0x38     0       1  0xffffffffaec4b5d3         0         0         0        5         4  [k] llist_add_batch            [kernel.kallsyms]  llist_add_batch+3               0{0-1,5-6}
+
+  ----------------------------------------------------------------------
+      9        0        9      139        0        0  0xffffa0da0d342940
+  ----------------------------------------------------------------------
+           0.00%    0.00%    2.88%    0.00%    0.00%                 0x0     0       1  0xffffffffaf62000f         0         0        82       10         1  [k] syscall_exit_to_user_mode  [kernel.kallsyms]  syscall_exit_to_user_mode+431   0{8}
+           0.00%    0.00%    2.16%    0.00%    0.00%                 0x1     0       1  0xffffffffae46bc6f         0         0         0        3         1  [k] switch_fpu_return          [kernel.kallsyms]  switch_fpu_return+111           0{8}
+           0.00%    0.00%   76.26%    0.00%    0.00%                0x10     0       1  0xffffffffaf61fec1         0         0         0      106         1  [k] syscall_exit_to_user_mode  [kernel.kallsyms]  syscall_exit_to_user_mode+97    0{8}
+           0.00%   22.22%    0.00%    0.00%    0.00%                0x14     0       1  0xffffffffae59e856         0       128        84        8         1  [k] psi_task_switch            [kernel.kallsyms]  psi_task_switch+38              0{8}
+           0.00%   11.11%    0.00%    0.00%    0.00%                0x14     0       1  0xffffffffae57251f         0       119         0        1         1  [k] dequeue_entity             [kernel.kallsyms]  dequeue_entity+927              0{8}
+           0.00%   11.11%    0.00%    0.00%    0.00%                0x18     0       1  0xffffffffae554ce4         0       114         0        1         1  [k] prepare_task_switch        [kernel.kallsyms]  prepare_task_switch+84          0{8}
+           0.00%    0.00%    3.60%    0.00%    0.00%                0x18     0       1  0xffffffffae628185         0         0         0        5         1  [k] futex_wait_queue           [kernel.kallsyms]  futex_wait_queue+37             0{8}
+           0.00%    0.00%    1.44%    0.00%    0.00%                0x18     0       1  0xffffffffae6281cf         0         0         0        2         1  [k] futex_wait_queue           [kernel.kallsyms]  futex_wait_queue+111            0{8}
+           0.00%    0.00%    4.32%    0.00%    0.00%                0x28     0       1  0xffffffffae562a2a         0         0       254       12         5  [k] wake_up_q                  [kernel.kallsyms]  wake_up_q+90                    0{1,3,5-6,10}
+           0.00%    0.00%    4.32%    0.00%    0.00%                0x28     0       1  0xffffffffae627b33         0         0       162        8         4  [k] futex_wake_mark            [kernel.kallsyms]  futex_wake_mark+35              0{0-1,5-6}
+           0.00%   11.11%    0.00%    0.00%    0.00%                0x2c     0       1  0xffffffffae59e989         0       122        66        4         1  [k] psi_task_switch            [kernel.kallsyms]  psi_task_switch+345             0{8}
+           0.00%   44.44%    0.00%    0.00%    0.00%                0x34     0       1  0xffffffffae562481         0       121         0        4         2  [k] try_to_wake_up             [kernel.kallsyms]  try_to_wake_up+273              0{3,5}
+           0.00%    0.00%    5.04%    0.00%    0.00%                0x38     0       1  0xffffffffaec4b5d3         0         0         0        7         4  [k] llist_add_batch            [kernel.kallsyms]  llist_add_batch+3               0{1,3,5-6}
+
+  ----------------------------------------------------------------------
+     10        0        9        9        0        0  0xffffa0dd4c335a00
+  ----------------------------------------------------------------------
+           0.00%   44.44%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaf631702         0       111         0        4         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{6}
+           0.00%   55.56%    0.00%    0.00%    0.00%                 0x8     0       1  0xffffffffaf6316be         0       116        99        6         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{6}
+           0.00%    0.00%  100.00%    0.00%    0.00%                 0xc     0       1  0xffffffffaf631548         0         0         0        9         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{6}
+
+  ----------------------------------------------------------------------
+     11        0        8        0        0        0  0xffffa0dd4c335600
+  ----------------------------------------------------------------------
+           0.00%   75.00%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae55d7b9         0       153       158        9         3  [k] available_idle_cpu          [kernel.kallsyms]  available_idle_cpu+41            0{1,5,8}
+           0.00%   25.00%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae55c100         0       192         0        2         2  [k] call_function_single_prep_  [kernel.kallsyms]  call_function_single_prep_ipi+   0{5,8}
+
+  ----------------------------------------------------------------------
+     12        0        7        6        0        0  0xffffa0dd4c2b4c00
+  ----------------------------------------------------------------------
+           0.00%    0.00%   66.67%    0.00%    0.00%                 0x0     0       1  0xffffffffaf6311f3         0         0       198       13         1  [k] _raw_spin_lock       [kernel.kallsyms]  _raw_spin_lock+19         0{5}
+           0.00%   85.71%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffae553ab9         0       176        99        7         3  [k] ttwu_queue_wakelist  [kernel.kallsyms]  ttwu_queue_wakelist+217   0{1,3,6}
+           0.00%   14.29%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffae55d7dc         0       159       104        5         4  [k] available_idle_cpu   [kernel.kallsyms]  available_idle_cpu+76     0{1,3,6,8}
+           0.00%    0.00%   16.67%    0.00%    0.00%                 0x8     0       1  0xffffffffae57251b         0         0         0        1         1  [k] dequeue_entity       [kernel.kallsyms]  dequeue_entity+923        0{5}
+           0.00%    0.00%   16.67%    0.00%    0.00%                 0xc     0       1  0xffffffffae57254e         0         0         0        1         1  [k] dequeue_entity       [kernel.kallsyms]  dequeue_entity+974        0{5}
+
+  ----------------------------------------------------------------------
+     13        0        7        0        0        0  0xffffa0dd4c2b5600
+  ----------------------------------------------------------------------
+           0.00%   85.71%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae55d7b9         0       108        37        7         4  [k] available_idle_cpu          [kernel.kallsyms]  available_idle_cpu+41            0{1,3,6,8}
+           0.00%   14.29%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae55c100         0       107         0        1         1  [k] call_function_single_prep_  [kernel.kallsyms]  call_function_single_prep_ipi+   0{0}
+
+  ----------------------------------------------------------------------
+     14        0        7        6        0        0  0xffffa0dd4c435a00
+  ----------------------------------------------------------------------
+           0.00%   42.86%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaf631702         0       135         0        3         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{8}
+           0.00%   57.14%    0.00%    0.00%    0.00%                 0x8     0       1  0xffffffffaf6316be         0       112         0        4         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{8}
+           0.00%    0.00%  100.00%    0.00%    0.00%                 0xc     0       1  0xffffffffaf631548         0         0         0        6         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{8}
+
+  ----------------------------------------------------------------------
+     15        0        6        3        0        0  0xffffa0da00d0d280
+  ----------------------------------------------------------------------
+           0.00%   83.33%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffae55c108         0       135         0        5         3  [k] call_function_single_prep_  [kernel.kallsyms]  call_function_single_prep_ipi+   0{6,8,10}
+           0.00%   16.67%   66.67%    0.00%    0.00%                 0x0     0       1  0xffffffffae55c11d         0       379         0        3         3  [k] call_function_single_prep_  [kernel.kallsyms]  call_function_single_prep_ipi+   0{3,5,10}
+           0.00%    0.00%   33.33%    0.00%    0.00%                0x34     0       1  0xffffffffae5565b9         0         0         0        1         1  [k] finish_task_switch.isra.0   [kernel.kallsyms]  finish_task_switch.isra.0+105    0{1}
+
+  ----------------------------------------------------------------------
+     16        0        6       13        0        0  0xffffa0da52100800
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x30     0       1  0xffffffffae5557e5         0       139         0        6         4  [k] select_task_rq     [kernel.kallsyms]  select_task_rq+21      0{3,6,8,10}
+           0.00%    0.00%   69.23%    0.00%    0.00%                0x34     0       1  0xffffffffae5d5e9b         0         0         0        9         1  [k] __rcu_read_lock    [kernel.kallsyms]  __rcu_read_lock+27     0{5}
+           0.00%    0.00%   30.77%    0.00%    0.00%                0x34     0       1  0xffffffffae5dbb2e         0         0         0        4         1  [k] __rcu_read_unlock  [kernel.kallsyms]  __rcu_read_unlock+14   0{5}
+
+  ----------------------------------------------------------------------
+     17        0        6        8        0        0  0xffffa0dd4c334c00
+  ----------------------------------------------------------------------
+           0.00%    0.00%   37.50%    0.00%    0.00%                 0x0     0       1  0xffffffffaf6311f3         0         0        84       10         1  [k] _raw_spin_lock              [kernel.kallsyms]  _raw_spin_lock+19                0{6}
+           0.00%   66.67%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffae55d7dc         0       139        52        5         3  [k] available_idle_cpu          [kernel.kallsyms]  available_idle_cpu+76            0{3,5,8}
+           0.00%   33.33%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffae553ab9         0       130         0        2         2  [k] ttwu_queue_wakelist         [kernel.kallsyms]  ttwu_queue_wakelist+217          0{3,8}
+           0.00%    0.00%   25.00%    0.00%    0.00%                 0x4     0       1  0xffffffffae572e46         0         0         0        2         1  [k] dequeue_task_fair           [kernel.kallsyms]  dequeue_task_fair+342            0{6}
+           0.00%    0.00%   25.00%    0.00%    0.00%                 0x8     0       1  0xffffffffae57251b         0         0         0        2         1  [k] dequeue_entity              [kernel.kallsyms]  dequeue_entity+923               0{6}
+           0.00%    0.00%   12.50%    0.00%    0.00%                 0xc     0       1  0xffffffffae57254e         0         0       117        2         1  [k] dequeue_entity              [kernel.kallsyms]  dequeue_entity+974               0{6}
+
+  ----------------------------------------------------------------------
+     18        0        6        3        0        0  0xffffa0dd4c434c00
+  ----------------------------------------------------------------------
+           0.00%    0.00%  100.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaf6311f3         0         0       115        9         2  [k] _raw_spin_lock       [kernel.kallsyms]  _raw_spin_lock+19         0{6,8}
+           0.00%   66.67%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffae55d7dc         0       166       122        8         4  [k] available_idle_cpu   [kernel.kallsyms]  available_idle_cpu+76     0{0,3,5-6}
+           0.00%   33.33%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffae553ab9         0       146         0        2         2  [k] ttwu_queue_wakelist  [kernel.kallsyms]  ttwu_queue_wakelist+217   0{1,3}
+
+  ----------------------------------------------------------------------
+     19        0        5      100        1        0  0xffffa0da0bf38000
+  ----------------------------------------------------------------------
+           0.00%    0.00%    6.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaf62000f         0         0        84        7         1  [k] syscall_exit_to_user_mode  [kernel.kallsyms]  syscall_exit_to_user_mode+431   0{6}
+           0.00%    0.00%    3.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaf627d34         0         0        99        8         1  [k] __schedule                 [kernel.kallsyms]  __schedule+292                  0{6}
+           0.00%    0.00%    7.00%    0.00%    0.00%                 0x1     0       1  0xffffffffae46bc6f         0         0        54        9         1  [k] switch_fpu_return          [kernel.kallsyms]  switch_fpu_return+111           0{6}
+           0.00%    0.00%   75.00%    0.00%    0.00%                0x10     0       1  0xffffffffaf61fec1         0         0         0       75         1  [k] syscall_exit_to_user_mode  [kernel.kallsyms]  syscall_exit_to_user_mode+97    0{6}
+           0.00%   20.00%    0.00%    0.00%    0.00%                0x14     0       1  0xffffffffae562446         0       126         0        1         1  [k] try_to_wake_up             [kernel.kallsyms]  try_to_wake_up+214              0{1}
+           0.00%   20.00%    0.00%    0.00%    0.00%                0x14     0       1  0xffffffffae57251f         0       109         0        1         1  [k] dequeue_entity             [kernel.kallsyms]  dequeue_entity+927              0{6}
+           0.00%   20.00%    0.00%    0.00%    0.00%                0x14     0       1  0xffffffffae59e856         0       118        72        3         1  [k] psi_task_switch            [kernel.kallsyms]  psi_task_switch+38              0{6}
+           0.00%    0.00%    1.00%    0.00%    0.00%                0x18     0       1  0xffffffffae628185         0         0         0        1         1  [k] futex_wait_queue           [kernel.kallsyms]  futex_wait_queue+37             0{6}
+           0.00%    0.00%    2.00%    0.00%    0.00%                0x28     0       1  0xffffffffae562a2a         0         0       192        7         4  [k] wake_up_q                  [kernel.kallsyms]  wake_up_q+90                    0{1,3,5,10}
+           0.00%    0.00%    3.00%    0.00%    0.00%                0x28     0       1  0xffffffffae627b33         0         0       158        4         3  [k] futex_wake_mark            [kernel.kallsyms]  futex_wake_mark+35              0{1,3,8}
+           0.00%   40.00%    0.00%    0.00%    0.00%                0x34     0       1  0xffffffffae562481         0       119       103        5         2  [k] try_to_wake_up             [kernel.kallsyms]  try_to_wake_up+273              0{3,8}
+           0.00%    0.00%    3.00%  100.00%    0.00%                0x38     0       1  0xffffffffaec4b5d3         0         0         0        4         3  [k] llist_add_batch            [kernel.kallsyms]  llist_add_batch+3               0{0,5,8}
+
+  ----------------------------------------------------------------------
+     20        0        5        3        0        0  0xffffa0da0d342980
+  ----------------------------------------------------------------------
+           0.00%    0.00%  100.00%    0.00%    0.00%                 0x8     0       1  0xffffffffae56ac63         0         0         0        3         1  [k] select_task_rq_fair  [kernel.kallsyms]  select_task_rq_fair+147   0{8}
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae56245b         0       117         0        5         4  [k] try_to_wake_up       [kernel.kallsyms]  try_to_wake_up+235        0{1,3,5-6}
+
+  ----------------------------------------------------------------------
+     21        0        5       24        0        0  0xffffa0da19320800
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x30     0       1  0xffffffffae5557e5         0       111         0        5         4  [k] select_task_rq     [kernel.kallsyms]  select_task_rq+21      0{5-6,8,10}
+           0.00%    0.00%   54.17%    0.00%    0.00%                0x34     0       1  0xffffffffae5d5e9b         0         0         0       13         2  [k] __rcu_read_lock    [kernel.kallsyms]  __rcu_read_lock+27     0{0-1}
+           0.00%    0.00%   45.83%    0.00%    0.00%                0x34     0       1  0xffffffffae5dbb2e         0         0         0       11         2  [k] __rcu_read_unlock  [kernel.kallsyms]  __rcu_read_unlock+14   0{0-1}
+
+  ----------------------------------------------------------------------
+     22        0        5      116        0        0  0xffffa0da52100000
+  ----------------------------------------------------------------------
+           0.00%    0.00%    0.86%    0.00%    0.00%                 0x0     0       1  0xffffffffaf62000f         0         0        74        4         1  [k] syscall_exit_to_user_mode  [kernel.kallsyms]  syscall_exit_to_user_mode+431   0{5}
+           0.00%    0.00%    1.72%    0.00%    0.00%                 0x0     0       1  0xffffffffaf627d34         0         0       140        5         1  [k] __schedule                 [kernel.kallsyms]  __schedule+292                  0{5}
+           0.00%    0.00%    0.86%    0.00%    0.00%                 0x1     0       1  0xffffffffae46bc6f         0         0         0        1         1  [k] switch_fpu_return          [kernel.kallsyms]  switch_fpu_return+111           0{5}
+           0.00%    0.00%   84.48%    0.00%    0.00%                0x10     0       1  0xffffffffaf61fec1         0         0         0       98         1  [k] syscall_exit_to_user_mode  [kernel.kallsyms]  syscall_exit_to_user_mode+97    0{5}
+           0.00%   20.00%    0.00%    0.00%    0.00%                0x18     0       1  0xffffffffae554ce4         0       125         0        1         1  [k] prepare_task_switch        [kernel.kallsyms]  prepare_task_switch+84          0{5}
+           0.00%   20.00%    0.00%    0.00%    0.00%                0x18     0       1  0xffffffffae5623c5         0       144        95        3         3  [k] try_to_wake_up             [kernel.kallsyms]  try_to_wake_up+85               0{1,3,8}
+           0.00%    0.00%    2.59%    0.00%    0.00%                0x18     0       1  0xffffffffae628185         0         0         0        3         1  [k] futex_wait_queue           [kernel.kallsyms]  futex_wait_queue+37             0{5}
+           0.00%    0.00%    3.45%    0.00%    0.00%                0x28     0       1  0xffffffffae562a2a         0         0       237        8         4  [k] wake_up_q                  [kernel.kallsyms]  wake_up_q+90                    0{0-1,6,8}
+           0.00%    0.00%    1.72%    0.00%    0.00%                0x28     0       1  0xffffffffae627b33         0         0       215        6         3  [k] futex_wake_mark            [kernel.kallsyms]  futex_wake_mark+35              0{1,6,8}
+           0.00%   60.00%    0.00%    0.00%    0.00%                0x34     0       1  0xffffffffae562481         0       123        97        5         2  [k] try_to_wake_up             [kernel.kallsyms]  try_to_wake_up+273              0{3,8}
+           0.00%    0.00%    4.31%    0.00%    0.00%                0x38     0       1  0xffffffffaec4b5d3         0         0         0        5         4  [k] llist_add_batch            [kernel.kallsyms]  llist_add_batch+3               0{1,6,8,10}
+
+  ----------------------------------------------------------------------
+     23        0        5        0        0        0  0xffffa0dd4c2b4c40
+  ----------------------------------------------------------------------
+           0.00%   80.00%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae55d7e5         0       140        60        7         5  [k] available_idle_cpu  [kernel.kallsyms]  available_idle_cpu+85   0{0-1,3,6,8}
+           0.00%   20.00%    0.00%    0.00%    0.00%                0x30     0       1  0xffffffffaf627d64         0       128       101        2         1  [k] __schedule          [kernel.kallsyms]  __schedule+340          0{5}
+
+  ----------------------------------------------------------------------
+     24        0        5        3        0        0  0xffffa0dd4c2b5e80
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaec4b5d0         0       121        41        6         2  [k] llist_add_batch  [kernel.kallsyms]  llist_add_batch+0   0{3,8}
+           0.00%    0.00%  100.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaec4b5d9         0         0       226       11         6  [k] llist_add_batch  [kernel.kallsyms]  llist_add_batch+9   0{0-1,3,6,8,10}
+
+  ----------------------------------------------------------------------
+     25        0        5        2        2        0  0xffffa0dd4c421800
+  ----------------------------------------------------------------------
+           0.00%    0.00%  100.00%  100.00%    0.00%                 0x0     0       1  0xffffffffae596e8c         0         0        45        7         1  [k] cpuacct_charge       [kernel.kallsyms]  cpuacct_charge+76         0{8}
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x34     0       1  0xffffffffae553a82         0       118         0        5         2  [k] ttwu_queue_wakelist  [kernel.kallsyms]  ttwu_queue_wakelist+162   0{3,5}
+
+  ----------------------------------------------------------------------
+     26        0        5        1        0        0  0xffffa0dd4c435e80
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaec4b5d0         0       158         0        5         3  [k] llist_add_batch  [kernel.kallsyms]  llist_add_batch+0   0{0-1,3}
+           0.00%    0.00%  100.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaec4b5d9         0         0       313        6         4  [k] llist_add_batch  [kernel.kallsyms]  llist_add_batch+9   0{1,3,5,10}
+
+  ----------------------------------------------------------------------
+     27        0        4        0        0        0      0x5a63e4886280
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x20     0       1  0xffffffffaf5a2f66         0       118        88        5         3  [k] __get_user_nocheck_4  [kernel.kallsyms]  __get_user_nocheck_4+6   0{5-6,8}
+
+  ----------------------------------------------------------------------
+     28        0        4        2        0        0  0xffffa0da00fc2940
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffae55c108         0       110        98        6         3  [k] call_function_single_prep_  [kernel.kallsyms]  call_function_single_prep_ipi+   0{5-6,8}
+           0.00%    0.00%  100.00%    0.00%    0.00%                 0x0     0       1  0xffffffffae55c11d         0         0         0        2         2  [k] call_function_single_prep_  [kernel.kallsyms]  call_function_single_prep_ipi+   0{5,8}
+
+  ----------------------------------------------------------------------
+     29        0        4       14        0        0  0xffffa0da0d343140
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x30     0       1  0xffffffffae5557e5         0       117         0        4         3  [k] select_task_rq     [kernel.kallsyms]  select_task_rq+21      0{3,5,10}
+           0.00%    0.00%   42.86%    0.00%    0.00%                0x34     0       1  0xffffffffae5d5e9b         0         0         0        6         1  [k] __rcu_read_lock    [kernel.kallsyms]  __rcu_read_lock+27     0{8}
+           0.00%    0.00%   57.14%    0.00%    0.00%                0x34     0       1  0xffffffffae5dbb2e         0         0         0        8         1  [k] __rcu_read_unlock  [kernel.kallsyms]  __rcu_read_unlock+14   0{8}
+
+  ----------------------------------------------------------------------
+     30        0        4        0        1        0  0xffffa0dd4c021800
+  ----------------------------------------------------------------------
+           0.00%    0.00%    0.00%  100.00%    0.00%                 0x0     0       1  0xffffffffae596e8c         0         0        46        3         1  [k] cpuacct_charge       [kernel.kallsyms]  cpuacct_charge+76         0{0}
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x34     0       1  0xffffffffae553a82         0       139         0        4         2  [k] ttwu_queue_wakelist  [kernel.kallsyms]  ttwu_queue_wakelist+162   0{3,8}
+
+  ----------------------------------------------------------------------
+     31        0        4        1        0        0  0xffffa0dd4c0b4c00
+  ----------------------------------------------------------------------
+           0.00%    0.00%  100.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaf6311f3         0         0       115        8         1  [k] _raw_spin_lock       [kernel.kallsyms]  _raw_spin_lock+19         0{1}
+           0.00%   75.00%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffae55d7dc         0       152         0        3         3  [k] available_idle_cpu   [kernel.kallsyms]  available_idle_cpu+76     0{3,5-6}
+           0.00%   25.00%    0.00%    0.00%    0.00%                 0x4     0       1  0xffffffffae553ab9         0       168         0        1         1  [k] ttwu_queue_wakelist  [kernel.kallsyms]  ttwu_queue_wakelist+217   0{3}
+
+  ----------------------------------------------------------------------
+     32        0        4        0        0        0  0xffffa0dd4c0b5600
+  ----------------------------------------------------------------------
+           0.00%   75.00%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae55d7b9         0       122        55        6         3  [k] available_idle_cpu          [kernel.kallsyms]  available_idle_cpu+41            0{5-6,8}
+           0.00%   25.00%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae55c100         0        97         0        1         1  [k] call_function_single_prep_  [kernel.kallsyms]  call_function_single_prep_ipi+   0{8}
+
+  ----------------------------------------------------------------------
+     33        0        4        3        0        0  0xffffa0dd4c1b5a00
+  ----------------------------------------------------------------------
+           0.00%    0.00%   33.33%    0.00%    0.00%                 0x0     0       1  0xffffffffaf63157c         0         0         0        1         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{3}
+           0.00%  100.00%    0.00%    0.00%    0.00%                 0x8     0       1  0xffffffffaf6316be         0       129         0        4         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{3}
+           0.00%    0.00%   66.67%    0.00%    0.00%                 0xc     0       1  0xffffffffaf631548         0         0         0        2         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{3}
+
+  ----------------------------------------------------------------------
+     34        0        4        1        0        0  0xffffa0dd4c1b5e80
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaec4b5d0         0       116         0        4         2  [k] llist_add_batch  [kernel.kallsyms]  llist_add_batch+0   0{0,8}
+           0.00%    0.00%  100.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaec4b5d9         0         0       270        6         2  [k] llist_add_batch  [kernel.kallsyms]  llist_add_batch+9   0{5,8}
+
+  ----------------------------------------------------------------------
+     35        0        4        5        1        0  0xffffa0dd4c2b5a00
+  ----------------------------------------------------------------------
+           0.00%   50.00%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaf631702         0       108         0        2         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{5}
+           0.00%    0.00%    0.00%  100.00%    0.00%                 0x0     0       1  0xffffffffaf6316af         0         0         0        1         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{3}
+           0.00%   50.00%    0.00%    0.00%    0.00%                 0x8     0       1  0xffffffffaf6316be         0       109         0        2         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{5}
+           0.00%    0.00%  100.00%    0.00%    0.00%                 0xc     0       1  0xffffffffaf631548         0         0         0        5         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{5}
+
+  ----------------------------------------------------------------------
+     36        0        4        3        4        0  0xffffa0dd4c321800
+  ----------------------------------------------------------------------
+           0.00%    0.00%  100.00%  100.00%    0.00%                 0x0     0       1  0xffffffffae596e8c         0         0        54       10         1  [k] cpuacct_charge       [kernel.kallsyms]  cpuacct_charge+76         0{6}
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x34     0       1  0xffffffffae553a82         0       117       124        5         3  [k] ttwu_queue_wakelist  [kernel.kallsyms]  ttwu_queue_wakelist+162   0{1,3,5}
+
+  ----------------------------------------------------------------------
+     37        0        4        0        0        0  0xffffa0dd4c334c40
+  ----------------------------------------------------------------------
+           0.00%   75.00%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae55d7e5         0       138        66        7         3  [k] available_idle_cpu  [kernel.kallsyms]  available_idle_cpu+85   0{3,5,8}
+           0.00%   25.00%    0.00%    0.00%    0.00%                0x30     0       1  0xffffffffaf627d64         0       122        34        2         1  [k] __schedule          [kernel.kallsyms]  __schedule+340          0{6}
+
+  ----------------------------------------------------------------------
+     38        0        4        0        0        0  0xffffa0dd4c435600
+  ----------------------------------------------------------------------
+           0.00%   50.00%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae55c100         0       124         0        2         2  [k] call_function_single_prep_  [kernel.kallsyms]  call_function_single_prep_ipi+   0{5-6}
+           0.00%   50.00%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae55d7b9         0       119        75        7         3  [k] available_idle_cpu          [kernel.kallsyms]  available_idle_cpu+41            0{1,5-6}
+
+  ----------------------------------------------------------------------
+     39        0        3        8        0        0  0xffffa0da00fc8000
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffae55c108         0       125       132        5         3  [k] call_function_single_prep_  [kernel.kallsyms]  call_function_single_prep_ipi+   0{5,8,10}
+           0.00%    0.00%   75.00%    0.00%    0.00%                 0x0     0       1  0xffffffffae55c11d         0         0       301        9         4  [k] call_function_single_prep_  [kernel.kallsyms]  call_function_single_prep_ipi+   0{1,3,8,10}
+           0.00%    0.00%   25.00%    0.00%    0.00%                0x34     0       1  0xffffffffae5565b9         0         0         0        2         1  [k] finish_task_switch.isra.0   [kernel.kallsyms]  finish_task_switch.isra.0+105    0{6}
+
+  ----------------------------------------------------------------------
+     40        0        3       11        0        0  0xffffa0da0bf38800
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x30     0       1  0xffffffffae5557e5         0       121         0        3         2  [k] select_task_rq     [kernel.kallsyms]  select_task_rq+21      0{3,5}
+           0.00%    0.00%   81.82%    0.00%    0.00%                0x34     0       1  0xffffffffae5d5e9b         0         0         0        9         1  [k] __rcu_read_lock    [kernel.kallsyms]  __rcu_read_lock+27     0{6}
+           0.00%    0.00%   18.18%    0.00%    0.00%                0x34     0       1  0xffffffffae5dbb2e         0         0         0        2         1  [k] __rcu_read_unlock  [kernel.kallsyms]  __rcu_read_unlock+14   0{6}
+
+  ----------------------------------------------------------------------
+     41        0        3        0        1        0  0xffffa0da0bf38940
+  ----------------------------------------------------------------------
+           0.00%    0.00%    0.00%  100.00%    0.00%                0x2c     0       1  0xffffffffaf627f99         0         0         0        1         1  [k] __schedule           [kernel.kallsyms]  __schedule+905            0{6}
+           0.00%   66.67%    0.00%    0.00%    0.00%                0x30     0       1  0xffffffffae553aef         0       137       113        3         2  [k] ttwu_queue_wakelist  [kernel.kallsyms]  ttwu_queue_wakelist+271   0{1,5}
+           0.00%   33.33%    0.00%    0.00%    0.00%                0x31     0       1  0xffffffffae59e95d         0       127         0        1         1  [k] psi_task_switch      [kernel.kallsyms]  psi_task_switch+301       0{6}
+
+  ----------------------------------------------------------------------
+     42        0        3        0        1        0  0xffffa0da0d343280
+  ----------------------------------------------------------------------
+           0.00%    0.00%    0.00%  100.00%    0.00%                0x2c     0       1  0xffffffffaf627f99         0         0         0        1         1  [k] __schedule           [kernel.kallsyms]  __schedule+905            0{8}
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x30     0       1  0xffffffffae553aef         0       105         0        3         3  [k] ttwu_queue_wakelist  [kernel.kallsyms]  ttwu_queue_wakelist+271   0{0,5-6}
+
+  ----------------------------------------------------------------------
+     43        0        3        0        1        0  0xffffa0da1932dbc0
+  ----------------------------------------------------------------------
+           0.00%    0.00%    0.00%  100.00%    0.00%                0x2c     0       1  0xffffffffaf627f99         0         0         0        1         1  [k] __schedule           [kernel.kallsyms]  __schedule+905            0{3}
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x30     0       1  0xffffffffae553aef         0       118         0        3         3  [k] ttwu_queue_wakelist  [kernel.kallsyms]  ttwu_queue_wakelist+271   0{1,6,8}
+
+  ----------------------------------------------------------------------
+     44        0        3        6        0        0  0xffffa0dd4c0b5a00
+  ----------------------------------------------------------------------
+           0.00%   33.33%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaf631702         0       118         0        1         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{1}
+           0.00%    0.00%   33.33%    0.00%    0.00%                 0x0     0       1  0xffffffffaf63157c         0         0         0        2         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{1}
+           0.00%   66.67%    0.00%    0.00%    0.00%                 0x8     0       1  0xffffffffaf6316be         0       114         0        2         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{1}
+           0.00%    0.00%   66.67%    0.00%    0.00%                 0xc     0       1  0xffffffffaf631548         0         0         0        4         1  [k] native_queued_spin_lock_sl  [kernel.kallsyms]  native_queued_spin_lock_slowpa   0{1}
+
+  ----------------------------------------------------------------------
+     45        0        3        0        0        0  0xffffa0dd4c1b4c40
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                0x28     0       1  0xffffffffae55d7e5         0       154        88        4         2  [k] available_idle_cpu  [kernel.kallsyms]  available_idle_cpu+85   0{6,8}
+
+  ----------------------------------------------------------------------
+     46        0        3        7        0        0  0xffffa0dd4c335e80
+  ----------------------------------------------------------------------
+           0.00%  100.00%    0.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaec4b5d0         0       128         0        3         2  [k] llist_add_batch  [kernel.kallsyms]  llist_add_batch+0   0{3,8}
+           0.00%    0.00%  100.00%    0.00%    0.00%                 0x0     0       1  0xffffffffaec4b5d9         0         0       274       15         5  [k] llist_add_batch  [kernel.kallsyms]  llist_add_batch+9   0{1,3,5,8,10}
+
+  ----------------------------------------------------------------------
+     47        0        3       67        0        0  0xffffbea613a53a80
+  ----------------------------------------------------------------------
+           0.00%    0.00%    1.49%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae56ae04         0         0         0        1         1  [k] select_task_rq_fair      [kernel.kallsyms]  select_task_rq_fair+564     0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae57c205         0         0         0        1         1  [k] pick_next_task_idle      [kernel.kallsyms]  pick_next_task_idle+5       0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae622fec         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+44            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae628908         0         0         0        1         1  [k] __futex_wait             [kernel.kallsyms]  __futex_wait+184            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                 0x3   N/A       0  0xffffffffae5774df         0         0         0        1         1  [k] newidle_balance          [kernel.kallsyms]  newidle_balance+191         0{8}
+           0.00%    0.00%    2.99%    0.00%    0.00%                 0x4   N/A       0  0xffffffffae627cbc         0         0         0        2         1  [k] futex_wake               [kernel.kallsyms]  futex_wake+140              0{8}
+           0.00%   33.33%    0.00%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae627d22         0       130         0        1         1  [k] futex_wake               [kernel.kallsyms]  futex_wake+242              0{6}
+           0.00%    0.00%    1.49%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae5939b1         0         0         0        1         1  [k] psi_group_change         [kernel.kallsyms]  psi_group_change+81         0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae622fd6         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+22            0{8}
+           0.00%    0.00%    2.99%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae62300a         0         0         0        2         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+74            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae624657         0         0         0        1         1  [k] do_futex                 [kernel.kallsyms]  do_futex+7                  0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae62887d         0         0         0        1         1  [k] __futex_wait             [kernel.kallsyms]  __futex_wait+45             0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait               [kernel.kallsyms]  futex_wait+75               0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                 0xc   N/A       0  0xffffffffae623891         0         0         0        1         1  [k] futex_get_value_locked   [kernel.kallsyms]  futex_get_value_locked+33   0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x10   N/A       0  0xffffffffae5e1735         0         0         0        1         1  [k] rcu_note_context_switch  [kernel.kallsyms]  rcu_note_context_switch+5   0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x10   N/A       0  0xffffffffae622fdf         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+31            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x10   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+74            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x10   N/A       0  0xffffffffae6247b8         0         0         0        1         1  [k] do_futex                 [kernel.kallsyms]  do_futex+360                0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x10   N/A       0  0xffffffffae627c5c         0         0         0        1         1  [k] futex_wake               [kernel.kallsyms]  futex_wake+44               0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x10   N/A       0  0xffffffffae6287b9         0         0         0        1         1  [k] futex_wait_setup         [kernel.kallsyms]  futex_wait_setup+105        0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x10   N/A       0  0xffffffffae62887d         0         0         0        1         1  [k] __futex_wait             [kernel.kallsyms]  __futex_wait+45             0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x10   N/A       0  0xffffffffae628899         0         0         0        1         1  [k] __futex_wait             [kernel.kallsyms]  __futex_wait+73             0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x10   N/A       0  0xffffffffae7be6c5         0         0         0        1         1  [k] filemap_get_read_batch   [kernel.kallsyms]  filemap_get_read_batch+5    0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x18   N/A       0  0xffffffffae56ae04         0         0         0        1         1  [k] select_task_rq_fair      [kernel.kallsyms]  select_task_rq_fair+564     0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x18   N/A       0  0xffffffffae56ae3c         0         0         0        1         1  [k] select_task_rq_fair      [kernel.kallsyms]  select_task_rq_fair+620     0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x18   N/A       0  0xffffffffae593bb3         0         0         0        1         1  [k] psi_group_change         [kernel.kallsyms]  psi_group_change+595        0{8}
+           0.00%    0.00%    2.99%    0.00%    0.00%                0x18   N/A       0  0xffffffffae622fd2         0         0         0        2         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+18            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x18   N/A       0  0xffffffffae622fdf         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+31            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x18   N/A       0  0xffffffffae627c39         0         0         0        1         1  [k] futex_wake               [kernel.kallsyms]  futex_wake+9                0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x18   N/A       0  0xffffffffae628759         0         0         0        1         1  [k] futex_wait_setup         [kernel.kallsyms]  futex_wait_setup+9          0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x18   N/A       0  0xffffffffae62887d         0         0         0        1         1  [k] __futex_wait             [kernel.kallsyms]  __futex_wait+45             0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x18   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait               [kernel.kallsyms]  futex_wait+75               0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x1c   N/A       0  0xffffffffae627cbc         0         0         0        1         1  [k] futex_wake               [kernel.kallsyms]  futex_wake+140              0{8}
+           0.00%   33.33%    0.00%    0.00%    0.00%                0x20   N/A       0  0xffffffffae627d22         0       111         0        1         1  [k] futex_wake               [kernel.kallsyms]  futex_wake+242              0{6}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x20   N/A       0  0xffffffffae572cf5         0         0         0        1         1  [k] dequeue_task_fair        [kernel.kallsyms]  dequeue_task_fair+5         0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x20   N/A       0  0xffffffffae622fd8         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+24            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x20   N/A       0  0xffffffffae627b1e         0         0         0        1         1  [k] futex_wake_mark          [kernel.kallsyms]  futex_wake_mark+14          0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x20   N/A       0  0xffffffffae627d8a         0         0         0        1         1  [k] futex_wake               [kernel.kallsyms]  futex_wake+346              0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x20   N/A       0  0xffffffffae6287b9         0         0         0        1         1  [k] futex_wait_setup         [kernel.kallsyms]  futex_wait_setup+105        0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x20   N/A       0  0xffffffffae62893f         0         0         0        1         1  [k] __futex_wait             [kernel.kallsyms]  __futex_wait+239            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x20   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait               [kernel.kallsyms]  futex_wait+75               0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x24   N/A       0  0xffffffffae628779         0         0         0        1         1  [k] futex_wait_setup         [kernel.kallsyms]  futex_wait_setup+41         0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x28   N/A       0  0xffffffffae5722b6         0         0         0        1         1  [k] dequeue_entity           [kernel.kallsyms]  dequeue_entity+310          0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x28   N/A       0  0xffffffffae6231a4         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+484           0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x28   N/A       0  0xffffffffae62876c         0         0         0        1         1  [k] futex_wait_setup         [kernel.kallsyms]  futex_wait_setup+28         0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x28   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait               [kernel.kallsyms]  futex_wait+75               0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x28   N/A       0  0xffffffffae7bea54         0         0         0        1         1  [k] filemap_get_pages        [kernel.kallsyms]  filemap_get_pages+164       0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x2c   N/A       0  0xffffffffae627cbc         0         0         0        1         1  [k] futex_wake               [kernel.kallsyms]  futex_wake+140              0{8}
+           0.00%   33.33%    0.00%    0.00%    0.00%                0x30   N/A       0  0xffffffffae627d43         0       109         0        1         1  [k] futex_wake               [kernel.kallsyms]  futex_wake+275              0{6}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x30   N/A       0  0xffffffffae558a98         0         0         0        1         1  [k] dequeue_task             [kernel.kallsyms]  dequeue_task+56             0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x30   N/A       0  0xffffffffae5939b1         0         0         0        1         1  [k] psi_group_change         [kernel.kallsyms]  psi_group_change+81         0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x30   N/A       0  0xffffffffae622fd8         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+24            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x30   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+74            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x30   N/A       0  0xffffffffae62887d         0         0         0        1         1  [k] __futex_wait             [kernel.kallsyms]  __futex_wait+45             0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x30   N/A       0  0xffffffffae628a39         0         0         0        1         1  [k] futex_wait               [kernel.kallsyms]  futex_wait+9                0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x38   N/A       0  0xffffffffae5722b6         0         0         0        1         1  [k] dequeue_entity           [kernel.kallsyms]  dequeue_entity+310          0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x38   N/A       0  0xffffffffae622fc5         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+5             0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x38   N/A       0  0xffffffffae622fd2         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+18            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x38   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+74            0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x38   N/A       0  0xffffffffae6231a8         0         0         0        1         1  [k] get_futex_key            [kernel.kallsyms]  get_futex_key+488           0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x38   N/A       0  0xffffffffae624657         0         0         0        1         1  [k] do_futex                 [kernel.kallsyms]  do_futex+7                  0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x38   N/A       0  0xffffffffae624840         0         0         0        1         1  [k] do_futex                 [kernel.kallsyms]  do_futex+496                0{8}
+           0.00%    0.00%    2.99%    0.00%    0.00%                0x38   N/A       0  0xffffffffae624f40         0         0         0        2         1  [k] __x64_sys_futex          [kernel.kallsyms]  __x64_sys_futex+128         0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x38   N/A       0  0xffffffffae6281c1         0         0         0        1         1  [k] futex_wait_queue         [kernel.kallsyms]  futex_wait_queue+97         0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x38   N/A       0  0xffffffffae628785         0         0         0        1         1  [k] futex_wait_setup         [kernel.kallsyms]  futex_wait_setup+53         0{8}
+           0.00%    0.00%    1.49%    0.00%    0.00%                0x3c   N/A       0  0xffffffffae62878f         0         0         0        1         1  [k] futex_wait_setup         [kernel.kallsyms]  futex_wait_setup+63         0{8}
+
+  ----------------------------------------------------------------------
+     48        0        3       73        0        0  0xffffbea613a63b80
+  ----------------------------------------------------------------------
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae576003         0         0         0        1         1  [k] __update_idle_core         [kernel.kallsyms]  __update_idle_core+83          0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae5939b1         0         0         0        1         1  [k] psi_group_change           [kernel.kallsyms]  psi_group_change+81            0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae622fd4         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+20               0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+74               0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae6231a4         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+484              0{1}
+           0.00%    0.00%    2.74%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae624675         0         0         0        2         1  [k] do_futex                   [kernel.kallsyms]  do_futex+37                    0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae6287c5         0         0         0        1         1  [k] futex_wait_setup           [kernel.kallsyms]  futex_wait_setup+117           0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae628899         0         0         0        1         1  [k] __futex_wait               [kernel.kallsyms]  __futex_wait+73                0{1}
+           0.00%   33.33%    0.00%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae623adc         0       107         0        1         1  [k] futex_unqueue              [kernel.kallsyms]  futex_unqueue+12               0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae623018         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+88               0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae6231a4         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+484              0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae624675         0         0         0        1         1  [k] do_futex                   [kernel.kallsyms]  do_futex+37                    0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae624773         0         0         0        1         1  [k] do_futex                   [kernel.kallsyms]  do_futex+291                   0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae627c39         0         0         0        1         1  [k] futex_wake                 [kernel.kallsyms]  futex_wake+9                   0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae627c5c         0         0         0        1         1  [k] futex_wake                 [kernel.kallsyms]  futex_wake+44                  0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae627d04         0         0         0        1         1  [k] futex_wake                 [kernel.kallsyms]  futex_wake+212                 0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae627d8a         0         0         0        1         1  [k] futex_wake                 [kernel.kallsyms]  futex_wake+346                 0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae6287a6         0         0         0        1         1  [k] futex_wait_setup           [kernel.kallsyms]  futex_wait_setup+86            0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait                 [kernel.kallsyms]  futex_wait+75                  0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                 0xc   N/A       0  0xffffffffae628a63         0         0         0        1         1  [k] futex_wait                 [kernel.kallsyms]  futex_wait+51                  0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x10   N/A       0  0xffffffffae622fec         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+44               0{1}
+           0.00%    0.00%    2.74%    0.00%    0.00%                0x10   N/A       0  0xffffffffae6231a4         0         0         0        2         2  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+484              0{0-1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x10   N/A       0  0xffffffffae624840         0         0         0        1         1  [k] do_futex                   [kernel.kallsyms]  do_futex+496                   0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x10   N/A       0  0xffffffffae624ec9         0         0         0        1         1  [k] __x64_sys_futex            [kernel.kallsyms]  __x64_sys_futex+9              0{1}
+           0.00%    0.00%    2.74%    0.00%    0.00%                0x10   N/A       0  0xffffffffae624f40         0         0         0        2         1  [k] __x64_sys_futex            [kernel.kallsyms]  __x64_sys_futex+128            0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x10   N/A       0  0xffffffffae624f50         0         0         0        1         1  [k] __x64_sys_futex            [kernel.kallsyms]  __x64_sys_futex+144            0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x10   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait                 [kernel.kallsyms]  futex_wait+75                  0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x10   N/A       0  0xffffffffaf6197ec         0         0         0        1         1  [k] do_syscall_64              [kernel.kallsyms]  do_syscall_64+124              0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x10   N/A       0  0xffffffffaf61feaa         0         0         0        1         1  [k] syscall_exit_to_user_mode  [kernel.kallsyms]  syscall_exit_to_user_mode+74   0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x14   N/A       0  0xffffffffae623891         0         0         0        1         1  [k] futex_get_value_locked     [kernel.kallsyms]  futex_get_value_locked+33      0{1}
+           0.00%   33.33%    0.00%    0.00%    0.00%                0x18   N/A       0  0xffffffffaf58f683         0       111         0        1         1  [k] plist_add                  [kernel.kallsyms]  plist_add+83                   0{8}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x18   N/A       0  0xffffffffae553ac7         0         0         0        1         1  [k] ttwu_queue_wakelist        [kernel.kallsyms]  ttwu_queue_wakelist+231        0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x18   N/A       0  0xffffffffae55a0a5         0         0         0        1         1  [k] pick_next_task             [kernel.kallsyms]  pick_next_task+5               0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x18   N/A       0  0xffffffffae627cb4         0         0         0        1         1  [k] futex_wake                 [kernel.kallsyms]  futex_wake+132                 0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x18   N/A       0  0xffffffffae62887d         0         0         0        1         1  [k] __futex_wait               [kernel.kallsyms]  __futex_wait+45                0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x18   N/A       0  0xffffffffae6288c3         0         0         0        1         1  [k] __futex_wait               [kernel.kallsyms]  __futex_wait+115               0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x18   N/A       0  0xffffffffae6288d1         0         0         0        1         1  [k] __futex_wait               [kernel.kallsyms]  __futex_wait+129               0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x18   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait                 [kernel.kallsyms]  futex_wait+75                  0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x18   N/A       0  0xffffffffaf6197ec         0         0         0        1         1  [k] do_syscall_64              [kernel.kallsyms]  do_syscall_64+124              0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x20   N/A       0  0xffffffffae622fd6         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+22               0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x20   N/A       0  0xffffffffae628771         0         0         0        1         1  [k] futex_wait_setup           [kernel.kallsyms]  futex_wait_setup+33            0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x20   N/A       0  0xffffffffaf6197ec         0         0         0        1         1  [k] do_syscall_64              [kernel.kallsyms]  do_syscall_64+124              0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x24   N/A       0  0xffffffffae623891         0         0         0        1         1  [k] futex_get_value_locked     [kernel.kallsyms]  futex_get_value_locked+33      0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x24   N/A       0  0xffffffffae627cbc         0         0         0        1         1  [k] futex_wake                 [kernel.kallsyms]  futex_wake+140                 0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x28   N/A       0  0xffffffffae622fd6         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+22               0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x28   N/A       0  0xffffffffae6231a8         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+488              0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x28   N/A       0  0xffffffffae624f40         0         0         0        1         1  [k] __x64_sys_futex            [kernel.kallsyms]  __x64_sys_futex+128            0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x28   N/A       0  0xffffffffae628a39         0         0         0        1         1  [k] futex_wait                 [kernel.kallsyms]  futex_wait+9                   0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x28   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait                 [kernel.kallsyms]  futex_wait+75                  0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x28   N/A       0  0xffffffffaf6197ec         0         0         0        1         1  [k] do_syscall_64              [kernel.kallsyms]  do_syscall_64+124              0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x30   N/A       0  0xffffffffae59e859         0         0         0        1         1  [k] psi_task_switch            [kernel.kallsyms]  psi_task_switch+41             0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x30   N/A       0  0xffffffffae622fd2         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+18               0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x30   N/A       0  0xffffffffae622fdf         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+31               0{1}
+           0.00%    0.00%    2.74%    0.00%    0.00%                0x30   N/A       0  0xffffffffae62300a         0         0         0        2         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+74               0{1}
+           0.00%    0.00%    2.74%    0.00%    0.00%                0x30   N/A       0  0xffffffffae6231a4         0         0         0        2         2  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+484              0{0-1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x30   N/A       0  0xffffffffae624657         0         0         0        1         1  [k] do_futex                   [kernel.kallsyms]  do_futex+7                     0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x30   N/A       0  0xffffffffae624ecd         0         0         0        1         1  [k] __x64_sys_futex            [kernel.kallsyms]  __x64_sys_futex+13             0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x30   N/A       0  0xffffffffae624f40         0         0         0        1         1  [k] __x64_sys_futex            [kernel.kallsyms]  __x64_sys_futex+128            0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x30   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait                 [kernel.kallsyms]  futex_wait+75                  0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x30   N/A       0  0xffffffffae7b7eb5         0         0         0        1         1  [k] rseq_get_rseq_cs           [kernel.kallsyms]  rseq_get_rseq_cs+5             0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x30   N/A       0  0xffffffffae7bed91         0         0         0        1         1  [k] filemap_read               [kernel.kallsyms]  filemap_read+33                0{0}
+           0.00%   33.33%    0.00%    0.00%    0.00%                0x38   N/A       0  0xffffffffae623adc         0       139         0        1         1  [k] futex_unqueue              [kernel.kallsyms]  futex_unqueue+12               0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x38   N/A       0  0xffffffffae622fdf         0         0         0        1         1  [k] get_futex_key              [kernel.kallsyms]  get_futex_key+31               0{1}
+           0.00%    0.00%    2.74%    0.00%    0.00%                0x38   N/A       0  0xffffffffae627cb4         0         0         0        2         1  [k] futex_wake                 [kernel.kallsyms]  futex_wake+132                 0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x38   N/A       0  0xffffffffae627d8a         0         0         0        1         1  [k] futex_wake                 [kernel.kallsyms]  futex_wake+346                 0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x38   N/A       0  0xffffffffae628a39         0         0         0        1         1  [k] futex_wait                 [kernel.kallsyms]  futex_wait+9                   0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x38   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait                 [kernel.kallsyms]  futex_wait+75                  0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x38   N/A       0  0xffffffffae7b7ebd         0         0         0        1         1  [k] rseq_get_rseq_cs           [kernel.kallsyms]  rseq_get_rseq_cs+13            0{1}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x38   N/A       0  0xffffffffaf6197ec         0         0         0        1         1  [k] do_syscall_64              [kernel.kallsyms]  do_syscall_64+124              0{0}
+           0.00%    0.00%    1.37%    0.00%    0.00%                0x3c   N/A       0  0xffffffffae628779         0         0         0        1         1  [k] futex_wait_setup           [kernel.kallsyms]  futex_wait_setup+41            0{1}
+
+  ----------------------------------------------------------------------
+     49        0        3       64        2        0  0xffffbea613a73a80
+  ----------------------------------------------------------------------
+           0.00%    0.00%    1.56%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae6231a8         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+488         0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae627c96         0         0         0        1         1  [k] futex_wake           [kernel.kallsyms]  futex_wake+102            0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae62875e         0         0         0        1         1  [k] futex_wait_setup     [kernel.kallsyms]  futex_wait_setup+14       0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait           [kernel.kallsyms]  futex_wait+75             0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae7b7ee7         0         0         0        1         1  [k] rseq_get_rseq_cs     [kernel.kallsyms]  rseq_get_rseq_cs+55       0{3}
+           0.00%   33.33%    0.00%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae627d5b         0       160         0        1         1  [k] futex_wake           [kernel.kallsyms]  futex_wake+299            0{1}
+           0.00%   33.33%    0.00%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae627d6b         0       174         0        1         1  [k] futex_wake           [kernel.kallsyms]  futex_wake+315            0{6}
+           0.00%    0.00%    1.56%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae622ff2         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+50          0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae624773         0         0         0        1         1  [k] do_futex             [kernel.kallsyms]  do_futex+291              0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae627c3d         0         0         0        1         1  [k] futex_wake           [kernel.kallsyms]  futex_wake+13             0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait           [kernel.kallsyms]  futex_wait+75             0{3}
+           0.00%    0.00%    3.12%    0.00%    0.00%                 0xc   N/A       0  0xffffffffae627cbc         0         0         0        2         1  [k] futex_wake           [kernel.kallsyms]  futex_wake+140            0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x10   N/A       0  0xffffffffae553ac7         0         0         0        1         1  [k] ttwu_queue_wakelist  [kernel.kallsyms]  ttwu_queue_wakelist+231   0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x10   N/A       0  0xffffffffae572cad         0         0         0        1         1  [k] put_prev_task_fair   [kernel.kallsyms]  put_prev_task_fair+29     0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x10   N/A       0  0xffffffffae572cf5         0         0         0        1         1  [k] dequeue_task_fair    [kernel.kallsyms]  dequeue_task_fair+5       0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x10   N/A       0  0xffffffffae59e8e9         0         0         0        1         1  [k] psi_task_switch      [kernel.kallsyms]  psi_task_switch+185       0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x10   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+74          0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x10   N/A       0  0xffffffffae6231a4         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+484         0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x10   N/A       0  0xffffffffae6231a8         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+488         0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x10   N/A       0  0xffffffffae628908         0         0         0        1         1  [k] __futex_wait         [kernel.kallsyms]  __futex_wait+184          0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x10   N/A       0  0xffffffffaf61c8d0         0         0         0        1         1  [k] sched_clock_noinstr  [kernel.kallsyms]  sched_clock_noinstr+0     0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x18   N/A       0  0xffffffffae622fc5         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+5           0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x18   N/A       0  0xffffffffae6231a4         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+484         0{3}
+           0.00%    0.00%    3.12%    0.00%    0.00%                0x18   N/A       0  0xffffffffae624773         0         0         0        2         2  [k] do_futex             [kernel.kallsyms]  do_futex+291              0{3,10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x18   N/A       0  0xffffffffae6247a0         0         0         0        1         1  [k] do_futex             [kernel.kallsyms]  do_futex+336              0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x18   N/A       0  0xffffffffae6287a6         0         0         0        1         1  [k] futex_wait_setup     [kernel.kallsyms]  futex_wait_setup+86       0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x18   N/A       0  0xffffffffae62887d         0         0         0        1         1  [k] __futex_wait         [kernel.kallsyms]  __futex_wait+45           0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x18   N/A       0  0xffffffffae62893f         0         0         0        1         1  [k] __futex_wait         [kernel.kallsyms]  __futex_wait+239          0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x18   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait           [kernel.kallsyms]  futex_wait+75             0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x18   N/A       0  0xffffffffaf589c3d         0         0         0        1         1  [k] mas_prev_slot        [kernel.kallsyms]  mas_prev_slot+173         0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x1b   N/A       0  0xffffffffae5774df         0         0         0        1         1  [k] newidle_balance      [kernel.kallsyms]  newidle_balance+191       0{10}
+           0.00%   33.33%    0.00%    0.00%    0.00%                0x20   N/A       0  0xffffffffae623adc         0        87         0        1         1  [k] futex_unqueue        [kernel.kallsyms]  futex_unqueue+12          0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x20   N/A       0  0xffffffffae56ad32         0         0         0        1         1  [k] select_task_rq_fair  [kernel.kallsyms]  select_task_rq_fair+354   0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x20   N/A       0  0xffffffffae56d02b         0         0         0        1         1  [k] update_curr_se       [kernel.kallsyms]  update_curr_se+11         0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x20   N/A       0  0xffffffffae622fd2         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+18          0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x20   N/A       0  0xffffffffae622fda         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+26          0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x20   N/A       0  0xffffffffae624657         0         0         0        1         1  [k] do_futex             [kernel.kallsyms]  do_futex+7                0{10}
+           0.00%    0.00%    3.12%    0.00%    0.00%                0x20   N/A       0  0xffffffffae6247a0         0         0         0        2         2  [k] do_futex             [kernel.kallsyms]  do_futex+336              0{3,10}
+           0.00%    0.00%    0.00%   50.00%    0.00%                0x20   N/A       0  0xffffffffae624f40         0         0         0        1         1  [k] __x64_sys_futex      [kernel.kallsyms]  __x64_sys_futex+128       0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x20   N/A       0  0xffffffffae627cb4         0         0         0        1         1  [k] futex_wake           [kernel.kallsyms]  futex_wake+132            0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x20   N/A       0  0xffffffffae62875e         0         0         0        1         1  [k] futex_wait_setup     [kernel.kallsyms]  futex_wait_setup+14       0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x20   N/A       0  0xffffffffae6287b9         0         0         0        1         1  [k] futex_wait_setup     [kernel.kallsyms]  futex_wait_setup+105      0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x28   N/A       0  0xffffffffae572cf5         0         0         0        1         1  [k] dequeue_task_fair    [kernel.kallsyms]  dequeue_task_fair+5       0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x28   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+74          0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x28   N/A       0  0xffffffffae6231a4         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+484         0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x28   N/A       0  0xffffffffae624675         0         0         0        1         1  [k] do_futex             [kernel.kallsyms]  do_futex+37               0{3}
+           0.00%    0.00%    4.69%    0.00%    0.00%                0x28   N/A       0  0xffffffffae6247a0         0         0         0        3         1  [k] do_futex             [kernel.kallsyms]  do_futex+336              0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x28   N/A       0  0xffffffffae624f50         0         0         0        1         1  [k] __x64_sys_futex      [kernel.kallsyms]  __x64_sys_futex+144       0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x28   N/A       0  0xffffffffae627c35         0         0         0        1         1  [k] futex_wake           [kernel.kallsyms]  futex_wake+5              0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x28   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait           [kernel.kallsyms]  futex_wait+75             0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x30   N/A       0  0xffffffffae575fd7         0         0         0        1         1  [k] __update_idle_core   [kernel.kallsyms]  __update_idle_core+39     0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x30   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+74          0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x30   N/A       0  0xffffffffae623018         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+88          0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x30   N/A       0  0xffffffffae6231a8         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+488         0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x30   N/A       0  0xffffffffae624840         0         0         0        1         1  [k] do_futex             [kernel.kallsyms]  do_futex+496              0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x30   N/A       0  0xffffffffae628759         0         0         0        1         1  [k] futex_wait_setup     [kernel.kallsyms]  futex_wait_setup+9        0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x30   N/A       0  0xffffffffae628934         0         0         0        1         1  [k] __futex_wait         [kernel.kallsyms]  __futex_wait+228          0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x30   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait           [kernel.kallsyms]  futex_wait+75             0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x38   N/A       0  0xffffffffae622fd2         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+18          0{10}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x38   N/A       0  0xffffffffae622fdf         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+31          0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x38   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+74          0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x38   N/A       0  0xffffffffae623018         0         0         0        1         1  [k] get_futex_key        [kernel.kallsyms]  get_futex_key+88          0{3}
+           0.00%    0.00%    0.00%   50.00%    0.00%                0x38   N/A       0  0xffffffffae627c35         0         0         0        1         1  [k] futex_wake           [kernel.kallsyms]  futex_wake+5              0{3}
+           0.00%    0.00%    1.56%    0.00%    0.00%                0x38   N/A       0  0xffffffffae628899         0         0         0        1         1  [k] __futex_wait         [kernel.kallsyms]  __futex_wait+73           0{10}
+
+  ----------------------------------------------------------------------
+     50        0        3       75        0        0  0xffffbea613a73b80
+  ----------------------------------------------------------------------
+           0.00%   33.33%    0.00%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae6281d9         0       111         0        1         1  [k] futex_wait_queue            [kernel.kallsyms]  futex_wait_queue+121             0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae622fec         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+44                 0{10}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+74                 0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae6231a4         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+484                0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae624675         0         0         0        1         1  [k] do_futex                    [kernel.kallsyms]  do_futex+37                      0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae624773         0         0         0        1         1  [k] do_futex                    [kernel.kallsyms]  do_futex+291                     0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae624840         0         0         0        1         1  [k] do_futex                    [kernel.kallsyms]  do_futex+496                     0{3}
+           0.00%    0.00%    2.67%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae627d8a         0         0         0        2         2  [k] futex_wake                  [kernel.kallsyms]  futex_wake+346                   0{3,10}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x0   N/A       0  0xffffffffae62887d         0         0         0        1         1  [k] __futex_wait                [kernel.kallsyms]  __futex_wait+45                  0{10}
+           0.00%    0.00%    2.67%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae62300a         0         0         0        2         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+74                 0{10}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae6231a4         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+484                0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae624ed1         0         0         0        1         1  [k] __x64_sys_futex             [kernel.kallsyms]  __x64_sys_futex+17               0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae627c56         0         0         0        1         1  [k] futex_wake                  [kernel.kallsyms]  futex_wake+38                    0{10}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae62887d         0         0         0        1         1  [k] __futex_wait                [kernel.kallsyms]  __futex_wait+45                  0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae628899         0         0         0        1         1  [k] __futex_wait                [kernel.kallsyms]  __futex_wait+73                  0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae62893f         0         0         0        1         1  [k] __futex_wait                [kernel.kallsyms]  __futex_wait+239                 0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0x8   N/A       0  0xffffffffae7b7ecd         0         0         0        1         1  [k] rseq_get_rseq_cs            [kernel.kallsyms]  rseq_get_rseq_cs+29              0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                 0xc   N/A       0  0xffffffffae627cbc         0         0         0        1         1  [k] futex_wake                  [kernel.kallsyms]  futex_wake+140                   0{3}
+           0.00%   33.33%    0.00%    0.00%    0.00%                0x10   N/A       0  0xffffffffae627d43         0       110         0        1         1  [k] futex_wake                  [kernel.kallsyms]  futex_wake+275                   0{5}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x10   N/A       0  0xffffffffae553ac7         0         0         0        1         1  [k] ttwu_queue_wakelist         [kernel.kallsyms]  ttwu_queue_wakelist+231          0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x10   N/A       0  0xffffffffae622fd2         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+18                 0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x10   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+74                 0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x10   N/A       0  0xffffffffae623018         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+88                 0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x10   N/A       0  0xffffffffae6231a8         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+488                0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x10   N/A       0  0xffffffffae628a7b         0         0         0        1         1  [k] futex_wait                  [kernel.kallsyms]  futex_wait+75                    0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x10   N/A       0  0xffffffffaf61feaa         0         0         0        1         1  [k] syscall_exit_to_user_mode   [kernel.kallsyms]  syscall_exit_to_user_mode+74     0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x14   N/A       0  0xffffffffae623891         0         0         0        1         1  [k] futex_get_value_locked      [kernel.kallsyms]  futex_get_value_locked+33        0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x18   N/A       0  0xffffffffae572f0e         0         0         0        1         1  [k] dequeue_task_fair           [kernel.kallsyms]  dequeue_task_fair+542            0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x18   N/A       0  0xffffffffae622fec         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+44                 0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x18   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+74                 0{3}
+           0.00%    0.00%    2.67%    0.00%    0.00%                0x18   N/A       0  0xffffffffae6231a4         0         0         0        2         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+484                0{10}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x18   N/A       0  0xffffffffae624ecd         0         0         0        1         1  [k] __x64_sys_futex             [kernel.kallsyms]  __x64_sys_futex+13               0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x18   N/A       0  0xffffffffae624f07         0         0         0        1         1  [k] __x64_sys_futex             [kernel.kallsyms]  __x64_sys_futex+71               0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x18   N/A       0  0xffffffffae628771         0         0         0        1         1  [k] futex_wait_setup            [kernel.kallsyms]  futex_wait_setup+33              0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x1c   N/A       0  0xffffffffae627cbc         0         0         0        1         1  [k] futex_wake                  [kernel.kallsyms]  futex_wake+140                   0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x20   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+74                 0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x20   N/A       0  0xffffffffae6231a8         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+488                0{3}
+           0.00%    0.00%    2.67%    0.00%    0.00%                0x20   N/A       0  0xffffffffae628a7b         0         0         0        2         1  [k] futex_wait                  [kernel.kallsyms]  futex_wait+75                    0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x20   N/A       0  0xffffffffae7a26ee         0         0         0        1         1  [k] __perf_event_task_sched_in  [kernel.kallsyms]  __perf_event_task_sched_in+126   0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x20   N/A       0  0xffffffffae7b7ee7         0         0         0        1         1  [k] rseq_get_rseq_cs            [kernel.kallsyms]  rseq_get_rseq_cs+55              0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x20   N/A       0  0xffffffffae954608         0         0         0        1         1  [k] __fsnotify_parent           [kernel.kallsyms]  __fsnotify_parent+104            0{10}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x24   N/A       0  0xffffffffae623891         0         0         0        1         1  [k] futex_get_value_locked      [kernel.kallsyms]  futex_get_value_locked+33        0{3}
+           0.00%    0.00%    2.67%    0.00%    0.00%                0x28   N/A       0  0xffffffffae55a0f8         0         0         0        2         1  [k] pick_next_task              [kernel.kallsyms]  pick_next_task+88                0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x28   N/A       0  0xffffffffae577959         0         0         0        1         1  [k] pick_next_task_fair         [kernel.kallsyms]  pick_next_task_fair+41           0{10}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x28   N/A       0  0xffffffffae622ff2         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+50                 0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x28   N/A       0  0xffffffffae624773         0         0         0        1         1  [k] do_futex                    [kernel.kallsyms]  do_futex+291                     0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x28   N/A       0  0xffffffffae627c3b         0         0         0        1         1  [k] futex_wake                  [kernel.kallsyms]  futex_wake+11                    0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x28   N/A       0  0xffffffffae627c64         0         0         0        1         1  [k] futex_wake                  [kernel.kallsyms]  futex_wake+52                    0{3}
+           0.00%    0.00%    2.67%    0.00%    0.00%                0x28   N/A       0  0xffffffffae627c6c         0         0         0        2         1  [k] futex_wake                  [kernel.kallsyms]  futex_wake+60                    0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x28   N/A       0  0xffffffffae6287b9         0         0         0        1         1  [k] futex_wait_setup            [kernel.kallsyms]  futex_wait_setup+105             0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x28   N/A       0  0xffffffffae628899         0         0         0        1         1  [k] __futex_wait                [kernel.kallsyms]  __futex_wait+73                  0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x28   N/A       0  0xffffffffaf6197ec         0         0         0        1         1  [k] do_syscall_64               [kernel.kallsyms]  do_syscall_64+124                0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x2c   N/A       0  0xffffffffae627cbc         0         0         0        1         1  [k] futex_wake                  [kernel.kallsyms]  futex_wake+140                   0{10}
+           0.00%   33.33%    0.00%    0.00%    0.00%                0x30   N/A       0  0xffffffffae623adc         0       103         0        1         1  [k] futex_unqueue               [kernel.kallsyms]  futex_unqueue+12                 0{10}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x30   N/A       0  0xffffffffae622fd8         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+24                 0{10}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x30   N/A       0  0xffffffffae622fec         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+44                 0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x30   N/A       0  0xffffffffae62300a         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+74                 0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x30   N/A       0  0xffffffffae623018         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+88                 0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x30   N/A       0  0xffffffffae6231a4         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+484                0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x30   N/A       0  0xffffffffae623ad5         0         0         0        1         1  [k] futex_unqueue               [kernel.kallsyms]  futex_unqueue+5                  0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x30   N/A       0  0xffffffffae627c3d         0         0         0        1         1  [k] futex_wake                  [kernel.kallsyms]  futex_wake+13                    0{10}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x30   N/A       0  0xffffffffaebf66d5         0         0         0        1         1  [k] blkcg_maybe_throttle_curre  [kernel.kallsyms]  blkcg_maybe_throttle_current+5   0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x38   N/A       0  0xffffffffae572f0e         0         0         0        1         1  [k] dequeue_task_fair           [kernel.kallsyms]  dequeue_task_fair+542            0{10}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x38   N/A       0  0xffffffffae622fc5         0         0         0        1         1  [k] get_futex_key               [kernel.kallsyms]  get_futex_key+5                  0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x38   N/A       0  0xffffffffae624ec9         0         0         0        1         1  [k] __x64_sys_futex             [kernel.kallsyms]  __x64_sys_futex+9                0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x38   N/A       0  0xffffffffae6287a6         0         0         0        1         1  [k] futex_wait_setup            [kernel.kallsyms]  futex_wait_setup+86              0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x38   N/A       0  0xffffffffae6287b9         0         0         0        1         1  [k] futex_wait_setup            [kernel.kallsyms]  futex_wait_setup+105             0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x38   N/A       0  0xffffffffae628899         0         0         0        1         1  [k] __futex_wait                [kernel.kallsyms]  __futex_wait+73                  0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x38   N/A       0  0xffffffffae7bedc3         0         0         0        1         1  [k] filemap_read                [kernel.kallsyms]  filemap_read+83                  0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x38   N/A       0  0xffffffffaf627c96         0         0         0        1         1  [k] __schedule                  [kernel.kallsyms]  __schedule+134                   0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x3c   N/A       0  0xffffffffae623891         0         0         0        1         1  [k] futex_get_value_locked      [kernel.kallsyms]  futex_get_value_locked+33        0{3}
+           0.00%    0.00%    1.33%    0.00%    0.00%                0x3c   N/A       0  0xffffffffae627cbc         0         0         0        1         1  [k] futex_wake                  [kernel.kallsyms]  futex_wake+140                   0{10}

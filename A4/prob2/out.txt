@@ -1,0 +1,22 @@
+Inclusive Prefix Sum
+Array size: N = 40000000 elements
+Memory: 0.149012 GB
+GPU: NVIDIA A40
+
+CPU time: 180 ms
+
+Copy-Then-Execute Model:
+  Kernel time: 1.72109 ms
+  End-to-end time: 493 ms
+No differences found between base and test versions
+
+UVM Model (no hints):
+  Kernel time: 64.41 ms
+  End-to-end time: 270 ms
+No differences found between base and test versions
+
+UVM Model (with hints & prefetch):
+  Kernel time: 23.9667 ms
+  End-to-end time: 248 ms
+No differences found between base and test versions
+

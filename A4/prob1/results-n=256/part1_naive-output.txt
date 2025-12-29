@@ -1,0 +1,4 @@
+CPU time: 38 ms
+Naive kernel time: 4.19021 ms
+Naive end-to-end time: 67.0431 ms
+No differences found between base and test versions

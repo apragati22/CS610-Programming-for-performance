@@ -1,0 +1,38 @@
+CPU time: 36 ms
+
+Shared Memory Kernel - Block Size Analysis
+==========================================
+
+Block: 1x1x1 (1 threads)
+Grid: 256x256x256
+Shared memory: 216 bytes
+Kernel time: 49.1326 ms
+End-to-end time: 100.505 ms
+No differences found between base and test versions
+
+Block: 2x2x2 (8 threads)
+Grid: 128x128x128
+Shared memory: 512 bytes
+Kernel time: 10.7715 ms
+End-to-end time: 62.327 ms
+No differences found between base and test versions
+
+Block: 4x4x4 (64 threads)
+Grid: 64x64x64
+Shared memory: 1728 bytes
+Kernel time: 5.20909 ms
+End-to-end time: 57.246 ms
+No differences found between base and test versions
+
+Block: 8x8x8 (512 threads)
+Grid: 32x32x32
+Shared memory: 8000 bytes
+Kernel time: 1.43872 ms
+End-to-end time: 52.9854 ms
+No differences found between base and test versions
+
+==========================================
+Best configuration: 8x8x8
+Best kernel time: 1.43872 ms
+Best end-to-end time: 52.9854 ms
+Total end-to-end time (all configs): 1791.38 ms

@@ -1,0 +1,7 @@
+Serial version: 16777216 time: 20401
+OMP version: 16777216 time: 16377
+SSE version: 16777216 time: 7693
+AVX2 version: 16777216 time: 9105
+
+=== Performance Summary ===
+Array size: 16777216 elements (64 MB)

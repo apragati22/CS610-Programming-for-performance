@@ -1,0 +1,31 @@
+CPU time: 37 ms
+
+Optimized Kernel - Loop Unrolling + Register Blocking
+====================================================
+
+Block: 4x4x4 (64 threads)
+Grid: 64x64x32
+Unroll factor: 2
+Shared memory: 2880 bytes (2.8125 KB)
+Kernel time: 1.49811 ms
+End-to-end time: 54 ms
+No differences found between base and test versions
+
+Block: 8x8x8 (512 threads)
+Grid: 32x32x16
+Unroll factor: 2
+Shared memory: 14400 bytes (14.0625 KB)
+Kernel time: 1.01069 ms
+End-to-end time: 53 ms
+No differences found between base and test versions
+
+====================================================
+Best configuration: 8x8x8
+Best kernel time: 1.01069 ms
+Best end-to-end time: 53 ms
+Total end-to-end time (all configs): 915 ms
+
+Optimizations:
+1. Loop unrolling (factor 2)
+2. Register blocking for i/j neighbors
+3. Reduced shared memory accesses

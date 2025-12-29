@@ -1,0 +1,96 @@
+Filter size: 3x3 (2D), 3x3x3 (3D)
+========================================
+
+=== 2D CONVOLUTION TESTS ===
+
+2D Convolution (N=64):
+Verification passed
+  Basic - Kernel time: 0.03584 ms
+  Basic - End-to-end time: 0.075776 ms
+  Optimized - Kernel time: 0.021632 ms
+  Optimized - End-to-end time: 0.05504 ms
+  Kernel speedup: 1.6568x
+  End-to-end speedup: 1.37674x
+
+2D Convolution (N=128):
+Verification passed
+  Basic - Kernel time: 0.009216 ms
+  Basic - End-to-end time: 0.088 ms
+  Optimized - Kernel time: 0.00816 ms
+  Optimized - End-to-end time: 0.08288 ms
+  Kernel speedup: 1.12941x
+  End-to-end speedup: 1.06178x
+
+2D Convolution (N=256):
+Verification passed
+  Basic - Kernel time: 0.01024 ms
+  Basic - End-to-end time: 0.2592 ms
+  Optimized - Kernel time: 0.00816 ms
+  Optimized - End-to-end time: 0.257952 ms
+  Kernel speedup: 1.2549x
+  End-to-end speedup: 1.00484x
+
+2D Convolution (N=512):
+Verification passed
+  Basic - Kernel time: 0.012288 ms
+  Basic - End-to-end time: 0.951168 ms
+  Optimized - Kernel time: 0.011008 ms
+  Optimized - End-to-end time: 0.94464 ms
+  Kernel speedup: 1.11628x
+  End-to-end speedup: 1.00691x
+
+2D Convolution (N=1024):
+Verification passed
+  Basic - Kernel time: 0.024576 ms
+  Basic - End-to-end time: 3.32682 ms
+  Optimized - Kernel time: 0.025664 ms
+  Optimized - End-to-end time: 3.29533 ms
+  Kernel speedup: 0.957606x
+  End-to-end speedup: 1.00956x
+
+=== 3D CONVOLUTION TESTS ===
+
+3D Convolution (N=32):
+Verification passed
+  Basic - Kernel time: 0.034816 ms
+  Basic - End-to-end time: 0.097024 ms
+  Optimized - Kernel time: 0.02208 ms
+  Optimized - End-to-end time: 0.08352 ms
+  Kernel speedup: 1.57681x
+  End-to-end speedup: 1.16169x
+
+3D Convolution (N=64):
+Verification passed
+  Basic - Kernel time: 0.022528 ms
+  Basic - End-to-end time: 0.401824 ms
+  Optimized - Kernel time: 0.018848 ms
+  Optimized - End-to-end time: 0.405856 ms
+  Kernel speedup: 1.19525x
+  End-to-end speedup: 0.990065x
+
+3D Convolution (N=128):
+Verification passed
+  Basic - Kernel time: 0.104448 ms
+  Basic - End-to-end time: 6.40586 ms
+  Optimized - Kernel time: 0.090464 ms
+  Optimized - End-to-end time: 6.3319 ms
+  Kernel speedup: 1.15458x
+  End-to-end speedup: 1.01168x
+
+3D Convolution (N=256):
+Verification passed
+  Basic - Kernel time: 0.744448 ms
+  Basic - End-to-end time: 52.5921 ms
+  Optimized - Kernel time: 0.640128 ms
+  Optimized - End-to-end time: 49.9595 ms
+  Kernel speedup: 1.16297x
+  End-to-end speedup: 1.05269x
+
+3D Convolution (N=512):
+Verification passed
+  Basic - Kernel time: 5.92691 ms
+  Basic - End-to-end time: 396.305 ms
+  Optimized - Kernel time: 5.22739 ms
+  Optimized - End-to-end time: 410.111 ms
+  Kernel speedup: 1.13382x
+  End-to-end speedup: 0.966337x

@@ -1,0 +1,3 @@
+V3 (UVM) kernel time: 25.600 s
+Total result points: 11608
+V3 end-to-end time: 56.979847 s

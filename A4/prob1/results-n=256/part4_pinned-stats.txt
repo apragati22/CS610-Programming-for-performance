@@ -1,0 +1,91 @@
+Generating SQLite file p1-results/part4_pinned.sqlite from p1-results/part4_pinned.nsys-rep
+Exporting 1134 events: [1%                                                     ]Exporting 1134 events: [2%                                                     ]Exporting 1134 events: [3%                                                     ]Exporting 1134 events: [4%                                                     ]Exporting 1134 events: [5%                                                     ]Exporting 1134 events: [=6%                                                    ]Exporting 1134 events: [=7%                                                    ]Exporting 1134 events: [==8%                                                   ]Exporting 1134 events: [==9%                                                   ]Exporting 1134 events: [==10%                                                  ]Exporting 1134 events: [===11%                                                 ]Exporting 1134 events: [===12%                                                 ]Exporting 1134 events: [====13%                                                ]Exporting 1134 events: [====14%                                                ]Exporting 1134 events: [=====15%                                               ]Exporting 1134 events: [=====16%                                               ]Exporting 1134 events: [======17%                                              ]Exporting 1134 events: [======18%                                              ]Exporting 1134 events: [=======19%                                             ]Exporting 1134 events: [========20%                                            ]Exporting 1134 events: [========21%                                            ]Exporting 1134 events: [=========22%                                           ]Exporting 1134 events: [=========23%                                           ]Exporting 1134 events: [==========24%                                          ]Exporting 1134 events: [==========25%                                          ]Exporting 1134 events: [===========26%                                         ]Exporting 1134 events: [===========27%                                         ]Exporting 1134 events: [============28%                                        ]Exporting 1134 events: [============29%                                        ]Exporting 1134 events: [=============30%                                       ]Exporting 1134 events: [==============31%                                      ]Exporting 1134 events: [==============32%                                      ]Exporting 1134 events: [===============33%                                     ]Exporting 1134 events: [===============34%                                     ]Exporting 1134 events: [================35%                                    ]Exporting 1134 events: [================36%                                    ]Exporting 1134 events: [=================37%                                   ]Exporting 1134 events: [=================38%                                   ]Exporting 1134 events: [==================39%                                  ]Exporting 1134 events: [===================40%                                 ]Exporting 1134 events: [===================41%                                 ]Exporting 1134 events: [====================42%                                ]Exporting 1134 events: [====================43%                                ]Exporting 1134 events: [=====================44%                               ]Exporting 1134 events: [=====================45%                               ]Exporting 1134 events: [======================46%                              ]Exporting 1134 events: [======================47%                              ]Exporting 1134 events: [=======================48%                             ]Exporting 1134 events: [=======================49%                             ]Exporting 1134 events: [========================50%                            ]Exporting 1134 events: [=========================51%                           ]Exporting 1134 events: [=========================52%                           ]Exporting 1134 events: [==========================53%                          ]Exporting 1134 events: [==========================54%                          ]Exporting 1134 events: [===========================55%                         ]Exporting 1134 events: [===========================56%                         ]Exporting 1134 events: [============================57%                        ]Exporting 1134 events: [============================58%                        ]Exporting 1134 events: [=============================59%                       ]Exporting 1134 events: [==============================60%                      ]Exporting 1134 events: [==============================61%                      ]Exporting 1134 events: [===============================62%                     ]Exporting 1134 events: [===============================63%                     ]Exporting 1134 events: [================================64%                    ]Exporting 1134 events: [================================65%                    ]Exporting 1134 events: [=================================66%                   ]Exporting 1134 events: [=================================67%                   ]Exporting 1134 events: [==================================68%                  ]Exporting 1134 events: [==================================69%                  ]Exporting 1134 events: [===================================70%                 ]Exporting 1134 events: [====================================71%                ]Exporting 1134 events: [====================================72%                ]Exporting 1134 events: [=====================================73%               ]Exporting 1134 events: [=====================================74%               ]Exporting 1134 events: [======================================75%              ]Exporting 1134 events: [======================================76%              ]Exporting 1134 events: [=======================================77%             ]Exporting 1134 events: [=======================================78%             ]Exporting 1134 events: [========================================79%            ]Exporting 1134 events: [=========================================80%           ]Exporting 1134 events: [=========================================81%           ]Exporting 1134 events: [==========================================82%          ]Exporting 1134 events: [==========================================83%          ]Exporting 1134 events: [===========================================84%         ]Exporting 1134 events: [===========================================85%         ]Exporting 1134 events: [============================================86%        ]Exporting 1134 events: [============================================87%        ]Exporting 1134 events: [=============================================88%       ]Exporting 1134 events: [=============================================89%       ]Exporting 1134 events: [==============================================90%      ]Exporting 1134 events: [===============================================91%     ]Exporting 1134 events: [===============================================92%     ]Exporting 1134 events: [================================================93%    ]Exporting 1134 events: [================================================94%    ]Exporting 1134 events: [=================================================95%   ]Exporting 1134 events: [=================================================96%   ]Exporting 1134 events: [==================================================97%  ]Exporting 1134 events: [==================================================98%  ]Exporting 1134 events: [===================================================99% ]Exporting 1134 events: [===================================================100%]
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/nvtxsum.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain NV Tools Extension (NVTX) data.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/osrtsum.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain OS Runtime trace data.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/cudaapisum.py]... 
+
+ ** CUDA API Summary (cudaapisum):
+
+ Time (%)  Total Time (ns)  Num Calls     Avg (ns)        Med (ns)      Min (ns)      Max (ns)     StdDev (ns)             Name         
+ --------  ---------------  ---------  --------------  --------------  -----------  ------------  --------------  ----------------------
+     35.6     25,28,27,527          2  12,64,13,763.5  12,64,13,763.5  3,61,30,422  21,66,97,105  12,76,79,926.0  cudaFreeHost          
+     25.3     17,96,84,046          2   8,98,42,023.0   8,98,42,023.0        1,258  17,96,82,788  12,70,54,028.3  cudaEventCreate       
+     21.0     14,90,57,857          2   7,45,28,928.5   7,45,28,928.5  7,33,38,009   7,57,19,848     16,84,214.5  cudaHostAlloc         
+     16.2     11,49,01,658          6   1,91,50,276.3   1,67,70,727.0  1,57,97,150   3,18,11,995     62,19,537.3  cudaMemcpy            
+      1.6      1,14,49,566          3     38,16,522.0     29,47,713.0    18,06,795     66,95,058     25,57,322.9  cudaFree              
+      0.2        15,48,745          6      2,58,124.2         4,577.5        3,696     14,13,979      5,68,067.4  cudaEventSynchronize  
+      0.1         7,93,895          3      2,64,631.7      3,09,516.0     1,09,490      3,74,889      1,38,275.5  cudaMalloc            
+      0.0         1,98,443          2        99,221.5        99,221.5        9,943      1,88,500      1,26,258.9  cudaLaunchKernel      
+      0.0         1,04,089         12         8,674.1         4,135.5        2,008        31,997        10,893.5  cudaEventRecord       
+      0.0           27,104          2        13,552.0        13,552.0        1,246        25,858        17,403.3  cudaEventDestroy      
+      0.0            2,034          1         2,034.0         2,034.0        2,034         2,034             0.0  cuModuleGetLoadingMode
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/gpukernsum.py]... 
+
+ ** CUDA GPU Kernel Summary (gpukernsum):
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)     GridXYZ         BlockXYZ                              Name                         
+ --------  ---------------  ---------  -----------  -----------  ---------  ---------  -----------  --------------  --------------  ------------------------------------------------------
+    100.0        28,24,500          2  14,12,250.0  14,12,250.0  14,11,562  14,12,938        973.0    32   32   32     8    8    8  pinned_kernel(const double *, double *, unsigned long)
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/gpumemtimesum.py]... 
+
+ ** GPU MemOps Summary (by Time) (gpumemtimesum):
+
+ Time (%)  Total Time (ns)  Count    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)      Operation     
+ --------  ---------------  -----  -------------  -------------  -----------  -----------  -----------  ------------------
+     57.6      6,51,10,878      3  2,17,03,626.0  1,67,55,162.0  1,67,31,835  3,16,23,881  85,91,200.8  [CUDA memcpy HtoD]
+     42.4      4,79,65,408      3  1,59,88,469.3  1,57,80,436.0  1,57,50,835  1,64,34,137   3,86,243.2  [CUDA memcpy DtoH]
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/gpumemsizesum.py]... 
+
+ ** GPU MemOps Summary (by Size) (gpumemsizesum):
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)      Operation     
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------
+    402.653      3   134.218   134.218   134.218   134.218        0.000  [CUDA memcpy DtoH]
+    402.653      3   134.218   134.218   134.218   134.218        0.000  [CUDA memcpy HtoD]
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/openmpevtsum.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain OpenMP event data.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/khrdebugsum.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain KHR Extension (KHR_DEBUG) data.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/khrdebuggpusum.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain GPU KHR Extension (KHR_DEBUG) data.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/vulkanmarkerssum.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain Vulkan Debug Extension (Vulkan Debug Util) data.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/vulkangpumarkersum.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain GPU Vulkan Debug Extension (GPU Vulkan Debug markers) data.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/dx11pixsum.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain DX11 CPU debug markers.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/dx12gpumarkersum.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain DX12 GPU debug markers.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/dx12pixsum.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain DX12 CPU debug markers.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/wddmqueuesdetails.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain WDDM context data.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/unifiedmemory.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/unifiedmemorytotals.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/umcpupagefaults.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [p1-results/part4_pinned.sqlite] with [/usr/local/cuda-11.8/nsight-systems-2022.4.2/host-linux-x64/reports/openaccsum.py]... 
+SKIPPED: p1-results/part4_pinned.sqlite does not contain OpenACC event data.
+

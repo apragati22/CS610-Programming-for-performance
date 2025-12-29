@@ -1,0 +1,38 @@
+=== Problem 3 Lock Performance Benchmark ===
+Date: Sunday 31 August 2025 10:54:34 PM IST
+
+======================================
+THREAD COUNT: 16
+======================================
+Var1: 1600000	Var2: 1
+Pthread mutex: Time taken (us): 3525
+Var1: 1600000	Var2: 1
+Filter lock: Time taken (us): 27199
+Var1: 1600000	Var2: 1
+Bakery lock: Time taken (us): 21166116
+Var1: 1600000	Var2: 1
+Spin lock: Time taken (us): 7275
+Var1: 1600000	Var2: 1
+Ticket lock: Time taken (us): 20750290
+Var1: 1600000	Var2: 1
+Array Q lock: Time taken (us): 21213110
+
+======================================
+THREAD COUNT: 32
+======================================
+Var1: 3200000	Var2: 1
+Pthread mutex: Time taken (us): 12992
+Var1: 3200000	Var2: 1
+Filter lock: Time taken (us): 4039208
+Var1: 3200000	Var2: 1
+Bakery lock: Time taken (us): 273086618
+Var1: 3200000	Var2: 1
+Spin lock: Time taken (us): 74704
+Var1: 3200000	Var2: 1
+Ticket lock: Time taken (us): 270134510
+Var1: 3200000	Var2: 1
+Array Q lock: Time taken (us): 270577512
+
+======================================
+THREAD COUNT: 64
+======================================
